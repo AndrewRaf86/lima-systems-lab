@@ -45,7 +45,6 @@
       --muted: #5D6878;
       --line: rgba(7, 18, 31, 0.12);
       --dark: #07121F;
-      --dark-soft: #101C2B;
       --gold: #B8934F;
       --gold-soft: #D8BD7A;
       --green: #18B36B;
@@ -354,13 +353,6 @@
       color: rgba(255,255,255,0.68);
     }
 
-    .grid-3 {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 18px;
-      margin-top: 38px;
-    }
-
     .grid-4 {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
@@ -609,6 +601,57 @@
       background: var(--white);
     }
 
+    .choice-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 18px;
+      margin-top: 38px;
+    }
+
+    .choice-card {
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,0.72);
+      border-radius: var(--radius);
+      padding: 28px;
+      box-shadow: 0 14px 48px rgba(7, 18, 31, 0.05);
+      display: flex;
+      flex-direction: column;
+    }
+
+    .choice-card h3 {
+      font-size: 1.75rem;
+      margin-bottom: 14px;
+    }
+
+    .choice-card p {
+      color: var(--muted);
+      margin: 0 0 20px;
+    }
+
+    .choice-card ul {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 24px;
+      display: grid;
+      gap: 12px;
+    }
+
+    .choice-card li {
+      display: grid;
+      grid-template-columns: 20px 1fr;
+      gap: 9px;
+      color: #3D4858;
+      font-size: 0.95rem;
+    }
+
+    .choice-card .btn {
+      margin-top: auto;
+      width: 100%;
+      background: var(--dark);
+      color: var(--white);
+      min-height: 50px;
+    }
+
     .case-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -773,7 +816,8 @@
       .grid-4,
       .process,
       .proof-strip,
-      .pricing-logic {
+      .pricing-logic,
+      .choice-grid {
         grid-template-columns: repeat(2, 1fr);
       }
 
@@ -800,14 +844,14 @@
         padding: 58px 0 62px;
       }
 
-      .grid-3,
       .grid-4,
       .pricing-grid,
       .case-grid,
       .problem-list,
       .process,
       .proof-strip,
-      .pricing-logic {
+      .pricing-logic,
+      .choice-grid {
         grid-template-columns: 1fr;
       }
 
@@ -905,7 +949,7 @@
         <a href="#problemas">Problemas</a>
         <a href="#auditoria">Auditoría</a>
         <a href="#precios">Precios</a>
-        <a href="#expectativas">Qué esperar</a>
+        <a href="#elegir-servicio">Cuál elegir</a>
         <a href="#pruebas">Pruebas</a>
         <a href="#confianza">Confianza</a>
         <a class="nav-cta" href="https://wa.me/13475206792?text=Hola%20Andrew%2C%20quiero%20agendar%20una%20auditor%C3%ADa%20para%20mi%20negocio.">WhatsApp</a>
@@ -1198,7 +1242,7 @@
               class="btn"
               href="https://wa.me/13475206792?text=Hola%20Andrew%2C%20me%20interesa%20la%20Business%20Systems%20Audit%20de%20%24250."
             >
-              Get the diagnosis
+              Pedir diagnóstico
             </a>
           </div>
 
@@ -1224,7 +1268,7 @@
               class="btn"
               href="https://wa.me/13475206792?text=Hola%20Andrew%2C%20me%20interesa%20el%20Audit%20%2B%20Action%20Plan%20de%20%24400."
             >
-              Get the action plan
+              Pedir plan de acción
             </a>
           </div>
 
@@ -1248,7 +1292,7 @@
               class="btn"
               href="https://wa.me/13475206792?text=Hola%20Andrew%2C%20quiero%20cotizar%20un%20Web%20%2B%20Lead%20System%20desde%20%241200."
             >
-              Build the lead system
+              Cotizar sistema de leads
             </a>
           </div>
 
@@ -1272,76 +1316,102 @@
               class="btn"
               href="https://wa.me/13475206792?text=Hola%20Andrew%2C%20quiero%20hablar%20sobre%20un%20sistema%20personalizado%20o%20automatizaci%C3%B3n%20desde%20%242000."
             >
-              Build the system
+              Hablar del sistema
             </a>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="expectativas">
+    <section id="elegir-servicio">
       <div class="container">
         <div class="section-title">
-          <h2>Qué esperar según el servicio</h2>
+          <h2>Cuál servicio elegir</h2>
           <p>
-            Cada oferta tiene un resultado distinto. La idea es empezar con claridad, no venderle algo más grande de lo necesario.
+            No todos los negocios necesitan una web nueva o una automatización grande.
+            La idea es empezar con el problema correcto y construir sólo si tiene sentido.
           </p>
         </div>
 
-        <div class="grid-4">
-          <div class="card">
-            <span class="mini-label">$250</span>
-            <h3>Auditoría</h3>
+        <div class="choice-grid">
+          <div class="choice-card">
+            <span class="mini-label">$250 · Diagnóstico</span>
+            <h3>Elija la auditoría si...</h3>
             <p>
-              Para diagnosticar rápidamente dónde se pierden leads, tiempo o dinero.
+              No está seguro dónde se pierden leads, tiempo o dinero.
+              Es el mejor primer paso si quiere una revisión clara antes de pagar por algo más grande.
             </p>
-            <ul class="check-list" style="margin-top: 18px;">
-              <li><span class="check">✓</span><span>Revisión de web, WhatsApp y seguimiento.</span></li>
-              <li><span class="check">✓</span><span>Lista de problemas por prioridad.</span></li>
-              <li><span class="check">✓</span><span>Resumen claro en PDF o video.</span></li>
+            <ul>
+              <li><span class="check">✓</span><span>Quiere saber qué está roto.</span></li>
+              <li><span class="check">✓</span><span>Tiene WhatsApp, web o seguimiento desordenado.</span></li>
+              <li><span class="check">✓</span><span>Quiere una lista de problemas por prioridad.</span></li>
             </ul>
+            <a
+              class="btn"
+              href="https://wa.me/13475206792?text=Hola%20Andrew%2C%20me%20interesa%20la%20Business%20Systems%20Audit%20de%20%24250."
+            >
+              Pedir diagnóstico
+            </a>
           </div>
 
-          <div class="card">
-            <span class="mini-label">$400</span>
-            <h3>Audit + Plan</h3>
+          <div class="choice-card">
+            <span class="mini-label">$400 · Diagnóstico + plan</span>
+            <h3>Elija Audit + Action Plan si...</h3>
             <p>
-              Para salir con un plan concreto antes de construir cualquier sistema.
+              Ya sabe que hay problemas, pero necesita saber qué arreglar primero,
+              qué herramientas usar y en qué orden implementar los cambios.
             </p>
-            <ul class="check-list" style="margin-top: 18px;">
-              <li><span class="check">✓</span><span>Diagnóstico más profundo.</span></li>
-              <li><span class="check">✓</span><span>Orden de implementación.</span></li>
-              <li><span class="check">✓</span><span>Herramientas recomendadas.</span></li>
-              <li><span class="check">✓</span><span>Mapa simple del sistema ideal.</span></li>
+            <ul>
+              <li><span class="check">✓</span><span>Quiere una ruta clara antes de construir.</span></li>
+              <li><span class="check">✓</span><span>Necesita saber qué automatizar, simplificar o ignorar.</span></li>
+              <li><span class="check">✓</span><span>Quiere una llamada de revisión de 30 minutos.</span></li>
             </ul>
+            <a
+              class="btn"
+              href="https://wa.me/13475206792?text=Hola%20Andrew%2C%20me%20interesa%20el%20Audit%20%2B%20Action%20Plan%20de%20%24400."
+            >
+              Pedir plan
+            </a>
           </div>
 
-          <div class="card">
-            <span class="mini-label">$1,200+</span>
-            <h3>Web + Leads</h3>
+          <div class="choice-card">
+            <span class="mini-label">$1,200+ · Web + leads</span>
+            <h3>Elija Web + Lead System si...</h3>
             <p>
-              Para negocios que necesitan una página más clara y un flujo de contacto más fuerte.
+              Su web o landing page no está convirtiendo bien y necesita un flujo más claro
+              para captar leads, conectar WhatsApp, recibir formularios y dar seguimiento.
             </p>
-            <ul class="check-list" style="margin-top: 18px;">
-              <li><span class="check">✓</span><span>Página enfocada en conversión.</span></li>
-              <li><span class="check">✓</span><span>WhatsApp y formulario conectados.</span></li>
-              <li><span class="check">✓</span><span>Copy claro por servicio.</span></li>
-              <li><span class="check">✓</span><span>SEO local básico y tracking de leads.</span></li>
+            <ul>
+              <li><span class="check">✓</span><span>Su página no genera confianza o consultas.</span></li>
+              <li><span class="check">✓</span><span>Quiere una estructura enfocada en conversión.</span></li>
+              <li><span class="check">✓</span><span>Necesita WhatsApp, formulario y tracking de leads.</span></li>
             </ul>
+            <a
+              class="btn"
+              href="https://wa.me/13475206792?text=Hola%20Andrew%2C%20quiero%20cotizar%20un%20Web%20%2B%20Lead%20System%20desde%20%241200."
+            >
+              Cotizar web
+            </a>
           </div>
 
-          <div class="card">
-            <span class="mini-label">$2,000+</span>
-            <h3>Automatización</h3>
+          <div class="choice-card">
+            <span class="mini-label">$2,000+ · Sistema interno</span>
+            <h3>Elija Custom Automation si...</h3>
             <p>
-              Para negocios con procesos repetitivos que ya les están costando tiempo o ventas.
+              Ya tiene procesos repetitivos que están costando tiempo, ventas o energía del equipo.
+              Esto es para construir el sistema interno, no sólo la página.
             </p>
-            <ul class="check-list" style="margin-top: 18px;">
-              <li><span class="check">✓</span><span>Automatización con Make o n8n.</span></li>
-              <li><span class="check">✓</span><span>Captación, reservas o seguimiento.</span></li>
-              <li><span class="check">✓</span><span>CRM liviano o dashboard simple.</span></li>
-              <li><span class="check">✓</span><span>Plantillas, reportes y capacitación.</span></li>
+            <ul>
+              <li><span class="check">✓</span><span>Repite el mismo trabajo administrativo cada semana.</span></li>
+              <li><span class="check">✓</span><span>Necesita seguimiento, intake, reportes o reservas.</span></li>
+              <li><span class="check">✓</span><span>Quiere automatización con Make, n8n o sistemas simples.</span></li>
             </ul>
+            <a
+              class="btn"
+              href="https://wa.me/13475206792?text=Hola%20Andrew%2C%20quiero%20hablar%20sobre%20un%20sistema%20personalizado%20o%20automatizaci%C3%B3n%20desde%20%242000."
+            >
+              Hablar del sistema
+            </a>
           </div>
         </div>
       </div>
