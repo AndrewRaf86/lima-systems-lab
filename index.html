@@ -4,37 +4,132 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Lima Systems Lab · Sistemas, web y automatización para negocios en Lima</title>
-  <meta name="description" content="Lima Systems Lab ayuda a negocios de servicio en Lima a recuperar leads perdidos, ordenar WhatsApp, mejorar seguimiento, automatizar tareas manuales y construir sistemas simples que sí se usan." />
+  <title>Lima Systems | Sistemas, automatización y SEO local para negocios en Lima</title>
+
+  <meta
+    name="description"
+    content="Lima Systems ayuda a gimnasios, inmobiliarias, clínicas, turismo, retiros y negocios de servicios en Lima a recuperar leads perdidos, mejorar WhatsApp, automatizar seguimiento, organizar citas y convertir más clientes."
+  />
+
+  <meta
+    name="keywords"
+    content="automatización para negocios Lima, sistemas para negocios Lima, SEO local Lima, páginas web para negocios Lima, automatización WhatsApp Lima, consultor AI Lima, lead follow up Lima, sistemas de ventas Lima, páginas web inmobiliarias Lima, páginas web gimnasios Lima"
+  />
+
   <meta name="author" content="Andrew Rafaniello" />
-  <meta property="og:title" content="Lima Systems Lab" />
-  <meta property="og:description" content="Auditoría, sistemas, web y automatización para negocios de servicio en Lima." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://limasystems.digital/" />
+
+  <meta property="og:title" content="Lima Systems | Sistemas digitales para negocios de servicios en Lima" />
+  <meta
+    property="og:description"
+    content="Encontramos dónde tu negocio pierde tiempo, dinero y clientes. Luego construimos sistemas simples para arreglarlo."
+  />
   <meta property="og:type" content="website" />
-  <meta property="og:locale" content="es_PE" />
-  <meta name="theme-color" content="#0B1929" />
+  <meta property="og:url" content="https://limasystems.digital/" />
+  <meta property="og:image" content="https://limasystems.digital/AR%20professional%20pic.jpeg" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Lima Systems | Sistemas y automatización para negocios en Lima" />
+  <meta
+    name="twitter:description"
+    content="Web, leads, WhatsApp, seguimiento, agenda y operaciones para negocios de servicios."
+  />
+  <meta name="twitter:image" content="https://limasystems.digital/AR%20professional%20pic.jpeg" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300..700;1,6..72,300..700&family=Geist:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,300;6..72,500;6..72,700&family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Lima Systems",
+    "url": "https://limasystems.digital/",
+    "image": "https://limasystems.digital/AR%20professional%20pic.jpeg",
+    "email": "arafaniellofjm@gmail.com",
+    "founder": {
+      "@type": "Person",
+      "name": "Andrew Rafaniello",
+      "sameAs": "https://www.linkedin.com/in/andrewrafaniello/"
+    },
+    "description": "Business systems, websites, local SEO, lead handling, WhatsApp follow-up, automation, scheduling, and operations support for service businesses in Lima, Peru.",
+    "areaServed": {
+      "@type": "City",
+      "name": "Lima"
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Lima",
+      "addressCountry": "PE"
+    },
+    "sameAs": [
+      "https://www.linkedin.com/in/andrewrafaniello/"
+    ],
+    "serviceType": [
+      "Business Systems Audit",
+      "Local SEO",
+      "Website Review",
+      "Lead Follow-Up Systems",
+      "WhatsApp Workflow Review",
+      "Business Automation",
+      "Service Business Website"
+    ],
+    "offers": [
+      {
+        "@type": "Offer",
+        "name": "Business Systems Audit",
+        "price": "250",
+        "priceCurrency": "USD"
+      },
+      {
+        "@type": "Offer",
+        "name": "Audit + Action Plan",
+        "price": "400",
+        "priceCurrency": "USD"
+      },
+      {
+        "@type": "Offer",
+        "name": "Web + Lead System",
+        "price": "900",
+        "priceCurrency": "USD"
+      },
+      {
+        "@type": "Offer",
+        "name": "Custom Systems / Automation",
+        "price": "1500",
+        "priceCurrency": "USD"
+      }
+    ]
+  }
+  </script>
 
   <style>
     :root {
-      --bg: #FAFAF7;
-      --bg-soft: #F2F0EA;
-      --ink: #0B1929;
+      --bg: #faf7f2;
+      --bg-soft: #f2e8db;
+      --ink: #0b1929;
       --ink-soft: #475569;
-      --ink-mute: #64748B;
-      --accent: #B8934F;
-      --accent-deep: #8A6E3B;
-      --line: rgba(11, 25, 41, 0.1);
-      --line-soft: rgba(11, 25, 41, 0.06);
-      --green: #25D366;
+      --muted: #64748b;
+      --line: rgba(11, 25, 41, 0.12);
+      --card: #ffffff;
+      --accent: #b8934f;
+      --accent-dark: #7c5f25;
+      --navy: #0b1929;
+      --green: #315846;
+      --shadow: 0 20px 60px rgba(11, 25, 41, 0.12);
+      --radius: 26px;
+      --max: 1180px;
     }
 
     * {
+      box-sizing: border-box;
       margin: 0;
       padding: 0;
-      box-sizing: border-box;
     }
 
     html {
@@ -44,1385 +139,1038 @@
     body {
       background: var(--bg);
       color: var(--ink);
-      font-family: 'Geist', -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      line-height: 1.55;
-      overflow-x: hidden;
-      -webkit-font-smoothing: antialiased;
+      font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.6;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
     }
 
     .container {
-      max-width: 1240px;
+      width: min(var(--max), calc(100% - 40px));
       margin: 0 auto;
-      padding: 0 32px;
     }
 
-    nav {
+    .topbar {
       position: sticky;
       top: 0;
-      z-index: 100;
-      padding: 18px 0;
-      background: rgba(250, 250, 247, 0.92);
-      backdrop-filter: blur(10px);
-      -webkit-backdrop-filter: blur(10px);
-      border-bottom: 1px solid var(--line-soft);
+      z-index: 50;
+      background: rgba(250, 247, 242, 0.9);
+      backdrop-filter: blur(14px);
+      border-bottom: 1px solid var(--line);
     }
 
-    nav .container {
+    .nav {
+      min-height: 76px;
       display: flex;
-      justify-content: space-between;
       align-items: center;
-      gap: 20px;
+      justify-content: space-between;
+      gap: 24px;
     }
 
-    .logo {
+    .brand {
       display: flex;
       align-items: center;
       gap: 12px;
-      color: var(--ink);
-      text-decoration: none;
-      font-family: 'Newsreader', serif;
-      font-size: 19px;
-      font-weight: 500;
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      font-size: 1.05rem;
     }
 
-    .logo-mark {
-      width: 34px;
-      height: 34px;
-      background: var(--ink);
-      color: var(--bg);
-      border-radius: 8px;
+    .brand-mark {
+      width: 38px;
+      height: 38px;
+      border-radius: 14px;
+      background: var(--navy);
+      color: white;
+      display: grid;
+      place-items: center;
+      font-weight: 800;
+      box-shadow: 0 10px 24px rgba(11, 25, 41, 0.22);
+    }
+
+    .nav-links {
       display: flex;
       align-items: center;
-      justify-content: center;
-      font-size: 13px;
-      position: relative;
-      flex: 0 0 auto;
+      gap: 20px;
+      color: var(--ink-soft);
+      font-size: 0.95rem;
+      font-weight: 600;
     }
 
-    .logo-mark::after {
-      content: '';
-      position: absolute;
-      bottom: 6px;
-      right: 6px;
-      width: 4px;
-      height: 4px;
-      background: var(--accent);
-      border-radius: 50%;
-    }
-
-    .logo-sub {
-      display: block;
-      margin-top: 1px;
-      font-family: 'Geist', sans-serif;
-      font-size: 10.5px;
-      color: var(--ink-mute);
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-    }
-
-    .cta-mini {
-      font-size: 14px;
-      padding: 10px 20px;
-      background: var(--ink);
-      color: var(--bg);
-      border-radius: 8px;
-      text-decoration: none;
-      font-weight: 500;
-      border: 1px solid var(--ink);
-      white-space: nowrap;
-      transition: 0.2s;
-    }
-
-    .cta-mini:hover {
-      background: var(--accent);
-      border-color: var(--accent);
+    .nav-links a:hover {
       color: var(--ink);
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 999px;
+      padding: 13px 20px;
+      font-weight: 800;
+      border: 1px solid transparent;
+      transition: 0.2s ease;
+      cursor: pointer;
+      white-space: nowrap;
+    }
+
+    .btn-primary {
+      background: var(--navy);
+      color: white;
+      box-shadow: 0 14px 28px rgba(11, 25, 41, 0.2);
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 18px 36px rgba(11, 25, 41, 0.25);
+    }
+
+    .btn-secondary {
+      background: white;
+      color: var(--ink);
+      border-color: var(--line);
+    }
+
+    .btn-secondary:hover {
+      border-color: var(--accent);
+      transform: translateY(-2px);
     }
 
     .hero {
-      padding: 80px 0 100px;
+      padding: 82px 0 56px;
     }
 
     .hero-grid {
       display: grid;
-      grid-template-columns: 1.15fr 1fr;
-      gap: 80px;
+      grid-template-columns: 1.12fr 0.88fr;
+      gap: 46px;
       align-items: center;
     }
 
-    .hero-tag {
+    .eyebrow {
       display: inline-flex;
       align-items: center;
       gap: 10px;
-      background: var(--bg-soft);
-      border: 1px solid var(--line);
-      padding: 7px 14px;
+      color: var(--accent-dark);
+      background: rgba(184, 147, 79, 0.14);
+      border: 1px solid rgba(184, 147, 79, 0.24);
+      padding: 9px 14px;
       border-radius: 999px;
-      font-size: 12.5px;
-      margin-bottom: 32px;
-      color: var(--ink-soft);
+      font-weight: 800;
+      font-size: 0.88rem;
+      margin-bottom: 22px;
     }
 
-    .hero-tag .dot {
-      width: 7px;
-      height: 7px;
-      background: #16a34a;
-      border-radius: 50%;
-      animation: pulse 2.5s ease-in-out infinite;
-    }
-
-    @keyframes pulse {
-      0%, 100% {
-        opacity: 1;
-        transform: scale(1);
-      }
-
-      50% {
-        opacity: 0.4;
-        transform: scale(0.85);
-      }
+    h1,
+    h2,
+    h3 {
+      line-height: 1.05;
+      letter-spacing: -0.055em;
     }
 
     h1 {
-      font-family: 'Newsreader', serif;
-      font-weight: 400;
-      font-size: clamp(40px, 5.2vw, 68px);
-      line-height: 1.02;
-      letter-spacing: -0.025em;
-      margin-bottom: 28px;
-    }
-
-    h1 .accent {
-      color: var(--accent-deep);
-      font-style: italic;
-      font-weight: 300;
-    }
-
-    .hero-sub {
-      font-size: 18px;
-      line-height: 1.6;
-      color: var(--ink-soft);
-      max-width: 54ch;
-      margin-bottom: 40px;
-    }
-
-    .cta-row {
-      display: flex;
-      gap: 12px;
-      flex-wrap: wrap;
-      align-items: center;
-      margin-bottom: 36px;
-    }
-
-    .btn-primary,
-    .btn-secondary {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: 10px;
-      padding: 15px 26px;
-      border-radius: 8px;
-      text-decoration: none;
-      font-weight: 500;
-      font-size: 15px;
-      transition: 0.2s;
-      border: 1px solid;
-    }
-
-    .btn-primary {
-      background: var(--ink);
-      color: var(--bg);
-      border-color: var(--ink);
-    }
-
-    .btn-primary:hover {
-      background: var(--accent);
-      border-color: var(--accent);
-      color: var(--ink);
-      transform: translateY(-1px);
-    }
-
-    .btn-secondary {
-      color: var(--ink);
-      border-color: var(--line);
-      background: var(--bg);
-    }
-
-    .btn-secondary:hover {
-      border-color: var(--ink);
-      background: var(--bg-soft);
-    }
-
-    .trust-line {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 6px 18px;
-      font-size: 13px;
-      color: var(--ink-mute);
-      border-top: 1px solid var(--line-soft);
-      padding-top: 20px;
-    }
-
-    .trust-line .sep {
-      color: var(--line);
-    }
-
-    .hero-photo {
-      position: relative;
-      aspect-ratio: 4 / 5;
-      border-radius: 14px;
-      overflow: hidden;
-      background: var(--bg-soft);
-      border: 1px solid var(--line);
-      box-shadow: 0 24px 70px -50px rgba(11, 25, 41, 0.45);
-    }
-
-    .hero-photo img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      object-position: center top;
-      display: block;
-    }
-
-    .photo-badge {
-      position: absolute;
-      bottom: 24px;
-      left: 24px;
-      right: 24px;
-      background: rgba(11, 25, 41, 0.86);
-      backdrop-filter: blur(10px);
-      -webkit-backdrop-filter: blur(10px);
-      color: var(--bg);
-      padding: 16px 20px;
-      border-radius: 8px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 12px;
-    }
-
-    .photo-badge-name {
-      font-family: 'Newsreader', serif;
-      font-size: 18px;
-      font-weight: 500;
-    }
-
-    .photo-badge-title {
-      font-size: 12px;
-      color: rgba(250, 250, 247, 0.7);
-      margin-top: 2px;
-    }
-
-    .photo-badge-flag {
-      font-size: 24px;
-    }
-
-    section {
-      padding: 100px 0;
-      position: relative;
-    }
-
-    .section-label {
-      font-size: 12px;
-      letter-spacing: 0.15em;
-      text-transform: uppercase;
-      color: var(--accent-deep);
-      font-weight: 600;
-      margin-bottom: 20px;
-      display: flex;
-      align-items: center;
-      gap: 12px;
-    }
-
-    .section-label::before {
-      content: '';
-      width: 28px;
-      height: 1px;
-      background: var(--accent-deep);
+      font-family: Newsreader, Georgia, serif;
+      font-size: clamp(3rem, 7vw, 6.7rem);
+      font-weight: 700;
+      max-width: 950px;
     }
 
     h2 {
-      font-family: 'Newsreader', serif;
-      font-weight: 400;
-      font-size: clamp(34px, 4vw, 50px);
-      line-height: 1.08;
-      letter-spacing: -0.02em;
-      margin-bottom: 24px;
-      max-width: 25ch;
+      font-family: Newsreader, Georgia, serif;
+      font-size: clamp(2.2rem, 4.3vw, 4.4rem);
+      font-weight: 700;
+      margin-bottom: 18px;
     }
 
-    h2 .italic {
-      color: var(--accent-deep);
-      font-style: italic;
-      font-weight: 300;
+    h3 {
+      font-size: 1.24rem;
+      margin-bottom: 10px;
     }
 
-    .section-intro {
-      font-size: 17px;
+    .lead {
+      margin-top: 24px;
+      font-size: clamp(1.06rem, 1.8vw, 1.28rem);
       color: var(--ink-soft);
-      max-width: 66ch;
-      margin-bottom: 60px;
-      line-height: 1.65;
+      max-width: 720px;
     }
 
-    .problem-bg {
-      background: var(--bg-soft);
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-top: 34px;
+    }
+
+    .hero-points {
+      margin-top: 28px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+      max-width: 780px;
+    }
+
+    .mini-point {
+      background: white;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      padding: 14px;
+      font-weight: 700;
+      color: var(--ink);
+      box-shadow: 0 8px 24px rgba(11, 25, 41, 0.06);
+    }
+
+    .photo-card {
+      background: white;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 16px;
+      box-shadow: var(--shadow);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .photo-card::before {
+      content: "";
+      position: absolute;
+      inset: auto -40px -80px auto;
+      width: 220px;
+      height: 220px;
+      background: rgba(184, 147, 79, 0.18);
+      border-radius: 999px;
+      filter: blur(4px);
+    }
+
+    .founder-photo {
+      border-radius: 22px;
+      aspect-ratio: 4 / 5;
+      object-fit: cover;
+      width: 100%;
+      position: relative;
+      z-index: 1;
+    }
+
+    .photo-caption {
+      position: relative;
+      z-index: 2;
+      margin-top: 16px;
+      padding: 16px;
+      border-radius: 18px;
+      background: var(--navy);
+      color: white;
+    }
+
+    .photo-caption strong {
+      display: block;
+      font-size: 1.06rem;
+      margin-bottom: 4px;
+    }
+
+    .photo-caption span {
+      color: rgba(255, 255, 255, 0.76);
+      font-size: 0.93rem;
+    }
+
+    section {
+      padding: 70px 0;
+    }
+
+    .section-head {
+      max-width: 820px;
+      margin-bottom: 34px;
+    }
+
+    .section-head p {
+      color: var(--ink-soft);
+      font-size: 1.08rem;
+      margin-top: 12px;
+    }
+
+    .problem-band {
+      background: var(--navy);
+      color: white;
+      padding: 48px 0;
     }
 
     .problem-grid {
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      border-top: 1px solid var(--line);
-      border-left: 1px solid var(--line);
-      margin-top: 20px;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 14px;
     }
 
-    .problem-item {
-      padding: 26px 28px;
-      border-right: 1px solid var(--line);
-      border-bottom: 1px solid var(--line);
-      display: flex;
-      align-items: center;
-      gap: 16px;
-      background: var(--bg);
+    .problem-card {
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      border-radius: 22px;
+      padding: 22px;
     }
 
-    .problem-icon {
-      width: 32px;
-      height: 32px;
-      background: rgba(184, 147, 79, 0.12);
-      color: var(--accent-deep);
-      border-radius: 6px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-shrink: 0;
-      font-family: 'Newsreader', serif;
-      font-size: 14px;
-      font-weight: 600;
+    .problem-card h3 {
+      color: white;
     }
 
-    .problem-text {
-      font-size: 15px;
-      color: var(--ink);
-      line-height: 1.5;
+    .problem-card p {
+      color: rgba(255, 255, 255, 0.75);
+      font-size: 0.95rem;
     }
 
     .grid-3 {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      gap: 24px;
-      margin-top: 20px;
+      gap: 18px;
     }
 
     .grid-2 {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      gap: 24px;
-      margin-top: 20px;
+      gap: 18px;
     }
 
     .card {
-      background: var(--bg);
+      background: var(--card);
       border: 1px solid var(--line);
-      border-radius: 16px;
-      padding: 32px 28px;
-      transition: 0.25s;
+      border-radius: var(--radius);
+      padding: 26px;
+      box-shadow: 0 12px 35px rgba(11, 25, 41, 0.07);
     }
 
-    .card:hover {
-      border-color: var(--accent);
-      transform: translateY(-4px);
-      box-shadow: 0 20px 40px -28px rgba(11, 25, 41, 0.22);
-    }
-
-    .card-num {
-      font-family: 'Newsreader', serif;
-      font-size: 14px;
-      color: var(--accent-deep);
-      letter-spacing: 0.1em;
-      font-weight: 600;
-      margin-bottom: 20px;
-    }
-
-    .card h3 {
-      font-family: 'Newsreader', serif;
-      font-size: 24px;
-      font-weight: 500;
-      letter-spacing: -0.015em;
-      line-height: 1.15;
-      margin-bottom: 14px;
-    }
-
-    .card p {
-      font-size: 15px;
+    .card p,
+    .card li {
       color: var(--ink-soft);
-      line-height: 1.6;
     }
 
-    .services-bg {
-      background: var(--ink);
-      color: var(--bg);
-    }
-
-    .services-bg .section-label {
-      color: var(--accent);
-    }
-
-    .services-bg .section-label::before {
-      background: var(--accent);
-    }
-
-    .services-bg h2 {
-      color: var(--bg);
-    }
-
-    .services-bg h2 .italic {
-      color: var(--accent);
-    }
-
-    .services-bg .section-intro {
-      color: rgba(250, 250, 247, 0.7);
-    }
-
-    .tier-stack {
-      display: grid;
-      grid-template-columns: 1.15fr 1fr 1fr;
-      gap: 18px;
-      margin-bottom: 20px;
-    }
-
-    .tier {
-      background: #17263A;
-      border: 1px solid rgba(250, 250, 247, 0.08);
-      border-radius: 16px;
-      padding: 32px 28px;
-      display: flex;
-      flex-direction: column;
-      transition: 0.25s;
-      position: relative;
-    }
-
-    .tier:hover {
-      border-color: var(--accent);
-      transform: translateY(-4px);
-    }
-
-    .tier.featured {
-      background: linear-gradient(180deg, #1F3550 0%, #17263A 100%);
-      border-color: var(--accent);
-    }
-
-    .featured-badge {
-      position: absolute;
-      top: -10px;
-      left: 28px;
-      background: var(--accent);
-      color: var(--ink);
-      padding: 5px 12px;
-      border-radius: 4px;
-      font-size: 10.5px;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      font-weight: 700;
-    }
-
-    .tier-name {
-      font-family: 'Newsreader', serif;
-      font-size: 24px;
-      font-weight: 500;
-      margin-bottom: 6px;
-      color: var(--bg);
-    }
-
-    .tier-tagline {
-      font-size: 13.5px;
-      color: rgba(250, 250, 247, 0.6);
-      margin-bottom: 24px;
-      line-height: 1.5;
-    }
-
-    .tier-price {
-      font-family: 'Newsreader', serif;
-      font-size: 38px;
-      line-height: 1;
-      color: var(--bg);
-      margin-bottom: 4px;
-    }
-
-    .tier-price .currency {
-      font-size: 20px;
-      vertical-align: top;
-      margin-right: 2px;
-      color: var(--accent);
-    }
-
-    .tier-price .from {
-      font-size: 13px;
-      color: rgba(250, 250, 247, 0.5);
-      display: block;
-      margin-bottom: 2px;
-      letter-spacing: 0.05em;
-    }
-
-    .price-sub {
-      font-size: 12px;
-      color: rgba(250, 250, 247, 0.5);
-      margin-bottom: 28px;
-    }
-
-    .tier ul {
+    .card ul {
       list-style: none;
-      margin-bottom: 28px;
-      flex-grow: 1;
-    }
-
-    .tier li {
-      padding: 9px 0;
-      font-size: 14px;
-      display: flex;
-      gap: 10px;
-      align-items: flex-start;
-      line-height: 1.45;
-      color: rgba(250, 250, 247, 0.85);
-    }
-
-    .tier li::before {
-      content: '';
-      width: 16px;
-      height: 16px;
-      background: rgba(184, 147, 79, 0.15);
-      border-radius: 4px;
-      flex-shrink: 0;
-      margin-top: 2px;
-      background-image: url("data:image/svg+xml,%3Csvg width='10' height='10' viewBox='0 0 10 10' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.5 5L4 7.5L8.5 2.5' stroke='%23B8934F' stroke-width='1.5' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
-      background-repeat: no-repeat;
-      background-position: center;
-    }
-
-    .tier .btn-primary {
-      width: 100%;
-      background: var(--accent);
-      border-color: var(--accent);
-      color: var(--ink);
-    }
-
-    .tier .btn-primary:hover {
-      background: var(--bg);
-      border-color: var(--bg);
-    }
-
-    .tier-secondary {
+      margin-top: 14px;
       display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 18px;
+      gap: 10px;
     }
 
-    .tier-mini {
-      background: #17263A;
-      border: 1px solid rgba(250, 250, 247, 0.08);
-      border-radius: 16px;
-      padding: 24px 26px;
-      display: flex;
-      justify-content: space-between;
+    .card li {
+      position: relative;
+      padding-left: 24px;
+    }
+
+    .card li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: var(--green);
+      font-weight: 900;
+    }
+
+    .tag {
+      display: inline-flex;
       align-items: center;
-      gap: 20px;
-    }
-
-    .tier-mini h4 {
-      font-family: 'Newsreader', serif;
-      font-size: 20px;
-      color: var(--bg);
-      margin-bottom: 6px;
-    }
-
-    .tier-mini p {
-      font-size: 13.5px;
-      color: rgba(250, 250, 247, 0.6);
-      max-width: 42ch;
-    }
-
-    .tier-mini-price {
-      font-family: 'Newsreader', serif;
-      font-size: 22px;
-      color: var(--accent);
-      white-space: nowrap;
-    }
-
-    .proof-card {
-      background: var(--bg);
-      border: 1px solid var(--line);
-      border-radius: 16px;
-      padding: 32px;
-    }
-
-    .proof-tag {
-      font-size: 11.5px;
-      letter-spacing: 0.15em;
-      text-transform: uppercase;
-      color: var(--accent-deep);
-      margin-bottom: 18px;
-      font-weight: 600;
-    }
-
-    .proof-card h3 {
-      font-family: 'Newsreader', serif;
-      font-size: 26px;
-      font-weight: 500;
+      border-radius: 999px;
+      padding: 7px 11px;
+      background: rgba(49, 88, 70, 0.1);
+      color: var(--green);
+      font-size: 0.78rem;
+      font-weight: 800;
       margin-bottom: 14px;
     }
 
-    .proof-card p {
-      color: var(--ink-soft);
-      font-size: 15px;
-      line-height: 1.6;
-      margin-bottom: 22px;
+    .process {
+      counter-reset: step;
     }
 
-    .proof-points {
-      display: grid;
-      gap: 10px;
-      color: var(--ink);
-      font-size: 14px;
-    }
-
-    .quote {
-      border-left: 3px solid var(--accent);
-      padding-left: 18px;
-      color: var(--ink-soft);
-      font-size: 15px;
-      line-height: 1.65;
-    }
-
-    .whyme-bg {
-      background: var(--bg-soft);
-    }
-
-    .whyme-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 80px;
-      align-items: center;
-    }
-
-    .whyme-points {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 16px;
-    }
-
-    .whyme-points div {
-      padding: 18px 20px;
-      background: var(--bg);
-      border: 1px solid var(--line);
-      border-radius: 10px;
-      font-size: 14.5px;
-      display: flex;
-      align-items: center;
-      gap: 12px;
-    }
-
-    .whyme-points div::before {
-      content: '';
-      width: 8px;
-      height: 8px;
-      background: var(--accent);
-      border-radius: 50%;
-      flex-shrink: 0;
-    }
-
-    .process-grid {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 24px;
-      margin-top: 20px;
-    }
-
-    .step-num {
-      font-family: 'Newsreader', serif;
-      font-size: 14px;
-      font-weight: 600;
-      color: var(--accent-deep);
-      letter-spacing: 0.1em;
-      margin-bottom: 18px;
-      display: block;
-      padding-bottom: 14px;
-      border-bottom: 1px solid var(--line);
-    }
-
-    .step h3 {
-      font-family: 'Newsreader', serif;
-      font-size: 21px;
-      font-weight: 500;
-      margin-bottom: 10px;
-    }
-
-    .step p {
-      color: var(--ink-soft);
-      font-size: 14.5px;
-    }
-
-    .cta-final {
-      background: var(--ink);
-      color: var(--bg);
-      text-align: center;
-      padding: 110px 32px;
-      margin: 0 24px 24px;
-      border-radius: 20px;
+    .process .card {
       position: relative;
       overflow: hidden;
     }
 
-    .cta-final::before {
-      content: '';
+    .process .card::before {
+      counter-increment: step;
+      content: "0" counter(step);
       position: absolute;
-      width: 800px;
-      height: 800px;
-      background: radial-gradient(circle, rgba(184, 147, 79, 0.18) 0%, transparent 60%);
-      top: -300px;
-      right: -200px;
-      border-radius: 50%;
-      pointer-events: none;
+      right: 22px;
+      top: 18px;
+      font-size: 3rem;
+      font-weight: 900;
+      color: rgba(11, 25, 41, 0.06);
+      letter-spacing: -0.08em;
     }
 
-    .cta-final .inner {
-      position: relative;
-      z-index: 2;
+    .pricing {
+      background: #fff;
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
     }
 
-    .cta-final h2 {
-      color: var(--bg);
-      margin: 0 auto 22px;
-      max-width: 20ch;
-    }
-
-    .cta-final h2 .italic {
-      color: var(--accent);
-    }
-
-    .cta-final p {
-      font-size: 18px;
-      color: rgba(250, 250, 247, 0.8);
-      margin: 0 auto 40px;
-      max-width: 52ch;
-      line-height: 1.6;
-    }
-
-    .cta-final .cta-row {
-      justify-content: center;
-      margin-bottom: 32px;
-    }
-
-    .cta-final .btn-primary {
-      background: var(--accent);
-      border-color: var(--accent);
-      color: var(--ink);
-      font-size: 16px;
-      padding: 16px 30px;
-    }
-
-    .cta-final .btn-primary:hover {
-      background: var(--bg);
-      border-color: var(--bg);
-    }
-
-    .cta-final .btn-secondary {
-      background: transparent;
-      border-color: rgba(250, 250, 247, 0.2);
-      color: var(--bg);
-    }
-
-    .cta-final .btn-secondary:hover {
-      border-color: var(--bg);
-      background: rgba(250, 250, 247, 0.05);
-    }
-
-    .cta-promise {
-      font-size: 13px !important;
-      color: rgba(250, 250, 247, 0.5) !important;
-      margin-bottom: 0 !important;
-    }
-
-    footer {
-      padding: 48px 0 40px;
-      background: var(--bg);
-      border-top: 1px solid var(--line-soft);
-    }
-
-    footer .container {
-      display: grid;
-      grid-template-columns: 1fr auto;
-      gap: 32px;
-      align-items: start;
-    }
-
-    .footer-brand {
-      font-family: 'Newsreader', serif;
-      font-size: 22px;
-      font-weight: 500;
-      margin-bottom: 6px;
-      display: flex;
-      align-items: center;
-      gap: 10px;
-    }
-
-    .footer-brand-dot {
-      width: 8px;
-      height: 8px;
-      background: var(--accent);
-      border-radius: 50%;
-    }
-
-    .footer-tagline,
-    .footer-operator {
-      color: var(--ink-mute);
-      font-size: 13.5px;
-      max-width: 52ch;
-    }
-
-    .footer-operator {
-      margin-top: 14px;
-      font-size: 12.5px;
-    }
-
-    .footer-links {
+    .price-card {
       display: flex;
       flex-direction: column;
-      gap: 8px;
-      text-align: right;
+      min-height: 100%;
     }
 
-    .footer-links a {
+    .price {
+      font-family: Newsreader, Georgia, serif;
+      font-size: 2.5rem;
+      font-weight: 700;
+      letter-spacing: -0.05em;
+      margin: 8px 0 2px;
+    }
+
+    .soles {
+      color: var(--muted);
+      font-weight: 700;
+      margin-bottom: 14px;
+    }
+
+    .price-note {
+      color: var(--ink-soft);
+      margin-bottom: 18px;
+    }
+
+    .proof-card {
+      background: linear-gradient(135deg, #ffffff, #f7efe4);
+      border: 1px solid rgba(184, 147, 79, 0.25);
+    }
+
+    .quote {
+      font-family: Newsreader, Georgia, serif;
+      font-size: 1.45rem;
+      line-height: 1.25;
       color: var(--ink);
-      text-decoration: none;
-      font-size: 14px;
+      margin-bottom: 18px;
     }
 
-    .footer-links a:hover {
-      color: var(--accent-deep);
+    .small {
+      color: var(--muted);
+      font-size: 0.92rem;
     }
 
-    .footer-links span {
-      font-size: 12px;
-      color: var(--ink-mute);
-    }
-
-    .wa-float {
-      position: fixed;
-      bottom: 24px;
-      right: 24px;
-      background: var(--green);
+    .audit-box {
+      background: var(--navy);
       color: white;
-      width: 58px;
-      height: 58px;
-      border-radius: 50%;
-      display: flex;
+      border-radius: 34px;
+      padding: 42px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 32px;
       align-items: center;
-      justify-content: center;
-      text-decoration: none;
-      box-shadow: 0 10px 30px rgba(37, 211, 102, 0.35);
-      z-index: 50;
-      transition: 0.2s;
+      box-shadow: var(--shadow);
     }
 
-    .wa-float:hover {
-      transform: scale(1.08);
+    .audit-box h2 {
+      color: white;
     }
 
-    .wa-float svg {
-      width: 30px;
-      height: 30px;
+    .audit-box p {
+      color: rgba(255, 255, 255, 0.75);
     }
 
-    .fade-in {
-      opacity: 0;
-      transform: translateY(16px);
-      animation: fadeIn 0.7s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    .audit-list {
+      display: grid;
+      gap: 12px;
     }
 
-    @keyframes fadeIn {
-      to {
-        opacity: 1;
-        transform: translateY(0);
+    .audit-item {
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.13);
+      border-radius: 18px;
+      padding: 14px 16px;
+      color: rgba(255, 255, 255, 0.88);
+      font-weight: 700;
+    }
+
+    .footer {
+      background: var(--navy);
+      color: white;
+      padding: 44px 0;
+    }
+
+    .footer-grid {
+      display: flex;
+      justify-content: space-between;
+      gap: 24px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    .footer p,
+    .footer a {
+      color: rgba(255, 255, 255, 0.7);
+    }
+
+    .footer a:hover {
+      color: white;
+    }
+
+    .contact-line {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+      margin-top: 16px;
+    }
+
+    @media (max-width: 920px) {
+      .nav-links {
+        display: none;
       }
-    }
 
-    @media (max-width: 900px) {
       .hero-grid,
-      .whyme-grid,
+      .audit-box,
       .grid-2 {
         grid-template-columns: 1fr;
-        gap: 50px;
-      }
-
-      .hero-photo {
-        max-width: 520px;
-        margin: 0 auto;
-      }
-
-      .problem-grid,
-      .grid-3,
-      .process-grid,
-      .tier-stack,
-      .tier-secondary {
-        grid-template-columns: 1fr;
-      }
-
-      .whyme-points {
-        grid-template-columns: 1fr;
-      }
-
-      footer .container {
-        grid-template-columns: 1fr;
-      }
-
-      .footer-links {
-        text-align: left;
-      }
-
-      section {
-        padding: 70px 0;
       }
 
       .hero {
-        padding: 50px 0 70px;
+        padding-top: 56px;
       }
 
-      .cta-final {
-        padding: 70px 24px;
-        margin: 0 16px 16px;
+      .hero-points,
+      .problem-grid,
+      .grid-3 {
+        grid-template-columns: 1fr;
       }
 
-      .container {
-        padding: 0 22px;
+      .photo-card {
+        max-width: 520px;
       }
     }
 
-    @media (max-width: 560px) {
-      nav .container {
-        align-items: flex-start;
+    @media (max-width: 520px) {
+      .container {
+        width: min(100% - 28px, var(--max));
       }
 
-      .logo {
-        font-size: 17px;
-      }
-
-      .logo-sub {
-        font-size: 9.5px;
-      }
-
-      .cta-mini {
-        padding: 9px 12px;
-        font-size: 12.5px;
-      }
-
-      h1 {
-        font-size: 38px;
-      }
-
-      .tier-mini {
+      .hero-actions {
         flex-direction: column;
-        align-items: flex-start;
       }
 
-      .tier-mini-price {
-        white-space: normal;
-      }
-
-      .btn-primary,
-      .btn-secondary {
+      .btn {
         width: 100%;
+      }
+
+      .audit-box {
+        padding: 28px;
+        border-radius: 26px;
       }
     }
   </style>
 </head>
 
 <body>
-  <nav>
-    <div class="container">
-      <a href="#" class="logo" aria-label="Lima Systems Lab">
-        <div class="logo-mark">LSL</div>
-        <div>
-          <div>Lima Systems Lab</div>
-          <span class="logo-sub">Sistemas · Leads · Operaciones</span>
-        </div>
+  <header class="topbar">
+    <div class="container nav">
+      <a href="#top" class="brand" aria-label="Lima Systems home">
+        <span class="brand-mark">LS</span>
+        <span>Lima Systems</span>
       </a>
-      <a href="#contacto" class="cta-mini">Agendar auditoría</a>
+
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="#services">Servicios</a>
+        <a href="#audit">Auditoría</a>
+        <a href="#pricing">Precios</a>
+        <a href="#proof">Experiencia</a>
+        <a href="#contact">Contacto</a>
+      </nav>
+
+      <a class="btn btn-primary" href="mailto:arafaniellofjm@gmail.com?subject=Business%20Systems%20Audit">
+        Book Audit
+      </a>
     </div>
-  </nav>
+  </header>
 
-  <section class="hero">
-    <div class="container">
-      <div class="hero-grid">
+  <main id="top">
+    <section class="hero">
+      <div class="container hero-grid">
         <div>
-          <div class="hero-tag fade-in">
-            <span class="dot"></span>
-            <span>Aceptando 3 auditorías este mes</span>
-          </div>
+          <div class="eyebrow">Business systems for Lima service businesses</div>
 
-          <h1 class="fade-in">
-            Encuentra dónde tu negocio pierde <span class="accent">leads, tiempo y dinero.</span>
-          </h1>
+          <h1>Stop losing clients in messy follow-up.</h1>
 
-          <p class="hero-sub fade-in">
-            Audito tu web, WhatsApp, seguimiento de clientes, reservas y trabajo administrativo.
-            Luego construyo sistemas simples para ordenar leads, responder más rápido, reducir trabajo manual y cerrar más oportunidades.
+          <p class="lead">
+            Lima Systems helps service businesses find where they are losing time, money, leads, and appointments.
+            Then we build simple systems for websites, WhatsApp, intake, scheduling, follow-up, and daily operations.
           </p>
 
-          <div class="cta-row fade-in">
-            <a href="#contacto" class="btn-primary">Agendar auditoría · $250</a>
-            <a href="mailto:arafaniellofjm@gmail.com?subject=Revisi%C3%B3n%20de%20negocio%20-%20Lima%20Systems%20Lab" class="btn-secondary">Enviar email</a>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#audit">Start with a systems audit</a>
+            <a class="btn btn-secondary" href="#pricing">See pricing</a>
           </div>
 
-          <div class="trust-line fade-in">
-            <span>U.S. Army Veteran</span>
-            <span class="sep">·</span>
-            <span>AI student at UMGC</span>
-            <span class="sep">·</span>
-            <span>Systems builder</span>
-            <span class="sep">·</span>
-            <span>Based in Lima</span>
+          <div class="hero-points">
+            <div class="mini-point">Lost leads</div>
+            <div class="mini-point">Slow follow-up</div>
+            <div class="mini-point">Manual admin work</div>
           </div>
         </div>
 
-        <div class="hero-photo fade-in">
-          <img src="AR professional pic.jpeg" alt="Andrew Rafaniello, founder of Lima Systems Lab" />
-          <div class="photo-badge">
-            <div>
-              <div class="photo-badge-name">Andrew Rafaniello</div>
-              <div class="photo-badge-title">Founder · Lima Systems Lab</div>
+        <aside class="photo-card" aria-label="Founder photo">
+          <img
+            class="founder-photo"
+            src="AR professional pic.jpeg"
+            alt="Andrew Rafaniello, founder of Lima Systems"
+          />
+          <div class="photo-caption">
+            <strong>Andrew Rafaniello</strong>
+            <span>U.S. Army veteran, AI student, systems builder, based in Lima, Peru.</span>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="problem-band">
+      <div class="container">
+        <div class="section-head">
+          <h2>Most businesses do not have an AI problem. They have an operations problem.</h2>
+          <p>
+            The leak usually happens before the sale. A lead messages on WhatsApp. Nobody replies fast enough.
+            The appointment is not confirmed. The website does not explain the offer. The owner is stuck doing admin work.
+          </p>
+        </div>
+
+        <div class="problem-grid">
+          <div class="problem-card">
+            <h3>Leads disappear</h3>
+            <p>People ask a question, wait too long, and contact a competitor.</p>
+          </div>
+
+          <div class="problem-card">
+            <h3>WhatsApp gets messy</h3>
+            <p>Important conversations get buried under random messages.</p>
+          </div>
+
+          <div class="problem-card">
+            <h3>Appointments get missed</h3>
+            <p>No clean intake, reminders, confirmation, or next step.</p>
+          </div>
+
+          <div class="problem-card">
+            <h3>Owners do too much</h3>
+            <p>The business depends on one person remembering everything.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services">
+      <div class="container">
+        <div class="section-head">
+          <h2>Practical systems, not vague AI consulting.</h2>
+          <p>
+            I focus on the boring problems that cost real money: lead handling, follow-up, scheduling,
+            websites, admin bottlenecks, tool waste, and repeatable workflows.
+          </p>
+        </div>
+
+        <div class="grid-3">
+          <div class="card">
+            <span class="tag">Lead handling</span>
+            <h3>Website + lead system</h3>
+            <p>
+              A cleaner website built around conversion, local search, clear offers, WhatsApp, forms, and next steps.
+            </p>
+            <ul>
+              <li>Homepage that explains the offer fast</li>
+              <li>Local SEO structure</li>
+              <li>WhatsApp and form routing</li>
+              <li>Clear calls to action</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <span class="tag">Operations</span>
+            <h3>Follow-up and intake workflow</h3>
+            <p>
+              Simple systems so leads do not get lost after the first message.
+            </p>
+            <ul>
+              <li>Lead capture review</li>
+              <li>Follow-up message templates</li>
+              <li>Appointment confirmation flow</li>
+              <li>Admin handoff process</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <span class="tag">Automation</span>
+            <h3>Custom systems</h3>
+            <p>
+              Light automation for repetitive work that does not need to be done manually every day.
+            </p>
+            <ul>
+              <li>Google Forms and Sheets workflows</li>
+              <li>Email and WhatsApp process design</li>
+              <li>Internal SOPs</li>
+              <li>AI-assisted admin systems</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="who">
+      <div class="container">
+        <div class="section-head">
+          <h2>Who this is for.</h2>
+          <p>
+            This is for service businesses that depend on leads, appointments, follow-up, trust, and fast response time.
+          </p>
+        </div>
+
+        <div class="grid-3">
+          <div class="card">
+            <h3>Gyms and fitness businesses</h3>
+            <p>Membership inquiries, trial classes, WhatsApp leads, follow-up, and missed signups.</p>
+          </div>
+
+          <div class="card">
+            <h3>Real estate teams</h3>
+            <p>Property inquiries, buyer intake, seller leads, WhatsApp tracking, and faster response systems.</p>
+          </div>
+
+          <div class="card">
+            <h3>Clinics and wellness offices</h3>
+            <p>Appointments, intake forms, reminders, reviews, and patient communication flow.</p>
+          </div>
+
+          <div class="card">
+            <h3>Tourism and travel</h3>
+            <p>Inquiry forms, package pages, WhatsApp routing, lead qualification, and follow-up.</p>
+          </div>
+
+          <div class="card">
+            <h3>Retreats and hospitality</h3>
+            <p>Trust-building websites, screening forms, FAQs, manual approval flows, and lead organization.</p>
+          </div>
+
+          <div class="card">
+            <h3>Appointment-based businesses</h3>
+            <p>Any business where a missed message can become a missed sale.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="audit">
+      <div class="container">
+        <div class="audit-box">
+          <div>
+            <h2>What you get in the audit.</h2>
+            <p>
+              The audit is the starting point. I review the business like an operator, not a designer.
+              The goal is to find the exact places where your business loses leads, time, and money.
+            </p>
+
+            <div class="hero-actions">
+              <a class="btn btn-secondary" href="mailto:arafaniellofjm@gmail.com?subject=Business%20Systems%20Audit">
+                Request audit
+              </a>
             </div>
-            <div class="photo-badge-flag">🇵🇪</div>
+          </div>
+
+          <div class="audit-list">
+            <div class="audit-item">Website review</div>
+            <div class="audit-item">WhatsApp review</div>
+            <div class="audit-item">Lead follow-up review</div>
+            <div class="audit-item">Admin bottleneck review</div>
+            <div class="audit-item">Tool waste review</div>
+            <div class="audit-item">Action plan with specific recommendations</div>
+            <div class="audit-item">PDF or video summary</div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="problem-bg">
-    <div class="container">
-      <div class="section-label">El problema</div>
-      <h2>Muchos negocios no necesitan más marketing. Necesitan <span class="italic">mejor seguimiento.</span></h2>
-      <p class="section-intro">
-        En Lima, muchos negocios ya tienen clientes, reputación y demanda. El problema es que los leads llegan por varios canales y nadie tiene un sistema claro para responder, registrar, seguir y cerrar.
-      </p>
-
-      <div class="problem-grid">
-        <div class="problem-item"><div class="problem-icon">1</div><div class="problem-text">Leads que escriben por WhatsApp y no reciben seguimiento</div></div>
-        <div class="problem-item"><div class="problem-icon">2</div><div class="problem-text">Citas perdidas por agenda manual o mala confirmación</div></div>
-        <div class="problem-item"><div class="problem-icon">3</div><div class="problem-text">Clientes preguntando lo mismo todo el día</div></div>
-        <div class="problem-item"><div class="problem-icon">4</div><div class="problem-text">Instagram, Google Maps y web desconectados</div></div>
-        <div class="problem-item"><div class="problem-icon">5</div><div class="problem-text">Respuestas lentas que bajan la confianza</div></div>
-        <div class="problem-item"><div class="problem-icon">6</div><div class="problem-text">Pagos por herramientas que nadie usa bien</div></div>
-        <div class="problem-item"><div class="problem-icon">7</div><div class="problem-text">Trabajo administrativo repetido a mano</div></div>
-        <div class="problem-item"><div class="problem-icon">8</div><div class="problem-text">No hay forma clara de saber qué lead se perdió</div></div>
-      </div>
-    </div>
-  </section>
-
-  <section>
-    <div class="container">
-      <div class="section-label">El enfoque</div>
-      <h2>Primero encuentro la fuga. <span class="italic">Después construyo el sistema.</span></h2>
-      <p class="section-intro">
-        No empiezo vendiendo una web o una automatización. Primero reviso cómo entra un cliente, cuánto demora la respuesta, qué pasa después del primer mensaje, cómo se agenda y qué tareas se están haciendo a mano.
-      </p>
-
-      <div class="grid-3">
-        <div class="card">
-          <div class="card-num">01</div>
-          <h3>Lead handling</h3>
-          <p>Ordeno cómo entran los clientes desde WhatsApp, Instagram, Google Maps, formularios y web.</p>
-        </div>
-
-        <div class="card">
-          <div class="card-num">02</div>
-          <h3>Follow-up</h3>
-          <p>Creo sistemas simples para que cada lead tenga seguimiento, recordatorio, estado y próxima acción.</p>
-        </div>
-
-        <div class="card">
-          <div class="card-num">03</div>
-          <h3>Operations</h3>
-          <p>Reduzco trabajo manual con formularios, plantillas, hojas de control, alertas, agendas y automatización práctica.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="problem-bg">
-    <div class="container">
-      <div class="section-label">Para quién es</div>
-      <h2>Trabajo mejor con negocios que dependen de <span class="italic">consultas, citas y confianza.</span></h2>
-      <p class="section-intro">
-        Si tu negocio recibe mensajes todos los días y depende de responder bien para cerrar clientes, probablemente tienes dinero escondido en tu sistema actual.
-      </p>
-
-      <div class="grid-3">
-        <div class="card"><h3>Gimnasios y estudios fitness</h3><p>Leads de clases, membresías, pruebas, horarios, WhatsApp, seguimiento y renovación.</p></div>
-        <div class="card"><h3>Real estate teams</h3><p>Consultas de propiedades, visitas, Google Sheets, WhatsApp, compradores, arrendatarios y seguimiento.</p></div>
-        <div class="card"><h3>Clínicas y estética</h3><p>Citas, confirmaciones, intake, FAQs, recordatorios, reseñas y atención por WhatsApp.</p></div>
-        <div class="card"><h3>Turismo y tours</h3><p>Preguntas repetidas, itinerarios, precios, disponibilidad, reservas y leads internacionales.</p></div>
-        <div class="card"><h3>Retiros y wellness</h3><p>Aplicaciones, preguntas sensibles, filtros manuales, contenido de confianza y flujo de consulta.</p></div>
-        <div class="card"><h3>Servicios locales</h3><p>Negocios con clientes reales, buen servicio y sistemas digitales desordenados.</p></div>
-      </div>
-    </div>
-  </section>
-
-  <section class="services-bg" id="servicios">
-    <div class="container">
-      <div class="section-label">Servicios y precios</div>
-      <h2>Ofertas simples. <span class="italic">Sin venderte software que no necesitas.</span></h2>
-      <p class="section-intro">
-        Los precios están en USD para mantener el servicio premium y claro. También puedo trabajar el equivalente en soles.
-      </p>
-
-      <div class="tier-stack">
-        <div class="tier featured">
-          <div class="featured-badge">Empieza aquí</div>
-          <div class="tier-name">Business Systems Audit</div>
-          <div class="tier-tagline">Revisión clara de dónde estás perdiendo leads, tiempo y dinero.</div>
-          <div class="tier-price"><span class="from">PRECIO FIJO</span><span class="currency">$</span>250</div>
-          <div class="price-sub">USD · pago único</div>
-          <ul>
-            <li>Revisión de web, Google Maps e Instagram</li>
-            <li>Revisión de WhatsApp y velocidad de respuesta</li>
-            <li>Revisión del seguimiento de leads</li>
-            <li>Revisión de agenda, reservas e intake</li>
-            <li>Detección de trabajo administrativo repetido</li>
-            <li>Detección de herramientas pagadas que no se usan</li>
-            <li>PDF o video resumen con recomendaciones</li>
-            <li>Plan de acción priorizado</li>
-          </ul>
-          <a href="https://wa.me/13475206792?text=Hola%2C%20quiero%20agendar%20una%20auditor%C3%ADa%20de%20sistemas%20para%20mi%20negocio." class="btn-primary">Agendar auditoría</a>
-        </div>
-
-        <div class="tier">
-          <div class="tier-name">Audit + Action Plan</div>
-          <div class="tier-tagline">Auditoría más roadmap detallado para implementar rápido.</div>
-          <div class="tier-price"><span class="from">PRECIO FIJO</span><span class="currency">$</span>400</div>
-          <div class="price-sub">USD · pago único</div>
-          <ul>
-            <li>Todo lo incluido en la auditoría</li>
-            <li>Mapa de flujo actual del negocio</li>
-            <li>Nuevo flujo recomendado</li>
-            <li>Lista de herramientas sugeridas</li>
-            <li>Prioridad por impacto y dificultad</li>
-            <li>Plan de 30 días para ejecutar</li>
-          </ul>
-          <a href="https://wa.me/13475206792?text=Hola%2C%20me%20interesa%20Audit%20%2B%20Action%20Plan." class="btn-primary">Pedir plan</a>
-        </div>
-
-        <div class="tier">
-          <div class="tier-name">Web + Lead System</div>
-          <div class="tier-tagline">Web o landing page conectada a WhatsApp, formularios y seguimiento.</div>
-          <div class="tier-price"><span class="from">DESDE</span><span class="currency">$</span>900+</div>
-          <div class="price-sub">USD · según alcance</div>
-          <ul>
-            <li>Landing page o sitio profesional</li>
-            <li>Mensaje claro para convertir clientes</li>
-            <li>Botones de WhatsApp y Google Maps</li>
-            <li>Formulario de consulta o intake</li>
-            <li>Tracker de leads en Google Sheets</li>
-            <li>SEO básico y estructura de confianza</li>
-          </ul>
-          <a href="https://wa.me/13475206792?text=Hola%2C%20me%20interesa%20Web%20%2B%20Lead%20System." class="btn-primary">Hablar de web</a>
-        </div>
-      </div>
-
-      <div class="tier-secondary">
-        <div class="tier-mini">
-          <div>
-            <h4>Custom Systems + Automation</h4>
-            <p>Flujos personalizados para WhatsApp, formularios, agenda, hojas de control, notificaciones y tareas internas.</p>
-          </div>
-          <div class="tier-mini-price">Desde $1,500+</div>
-        </div>
-
-        <div class="tier-mini">
-          <div>
-            <h4>Monthly Systems Support</h4>
-            <p>Mejoras, ajustes, mantenimiento, reportes, soporte y nuevas automatizaciones cuando el negocio crece.</p>
-          </div>
-          <div class="tier-mini-price">Desde $300/mes</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section>
-    <div class="container">
-      <div class="section-label">Qué recibes en la auditoría</div>
-      <h2>Un diagnóstico claro, no una llamada vaga de consultoría.</h2>
-      <p class="section-intro">
-        Al final tienes una lista concreta de problemas, oportunidades y próximos pasos. La idea es que salgas sabiendo qué arreglar primero y cuánto impacto puede tener.
-      </p>
-
-      <div class="grid-3">
-        <div class="card"><div class="card-num">01</div><h3>Website review</h3><p>Claridad, confianza, mobile, botones, velocidad percibida, mensajes y flujo hacia contacto.</p></div>
-        <div class="card"><div class="card-num">02</div><h3>WhatsApp review</h3><p>Velocidad, etiquetas, respuestas rápidas, preguntas repetidas, seguimiento y organización.</p></div>
-        <div class="card"><div class="card-num">03</div><h3>Lead follow-up review</h3><p>Qué pasa después del primer mensaje, quién responde, dónde se registra y cuándo se vuelve a contactar.</p></div>
-        <div class="card"><div class="card-num">04</div><h3>Admin bottlenecks</h3><p>Trabajo repetido, copiar y pegar, formularios, reportes, pagos, agenda y tareas que consumen horas.</p></div>
-        <div class="card"><div class="card-num">05</div><h3>Tool waste</h3><p>Apps pagadas que no se usan, sistemas duplicados y herramientas que podrían simplificarse.</p></div>
-        <div class="card"><div class="card-num">06</div><h3>Action plan</h3><p>PDF o video resumen con prioridades, quick wins y recomendaciones específicas para tu negocio.</p></div>
-      </div>
-    </div>
-  </section>
-
-  <section class="problem-bg">
-    <div class="container">
-      <div class="section-label">Results and experience</div>
-      <h2>Problemas reales que sé resolver.</h2>
-      <p class="section-intro">
-        Este trabajo no se trata de hablar de IA. Se trata de arreglar el punto donde el cliente se pierde, el equipo se atrasa o el dueño termina haciendo todo manualmente.
-      </p>
-
-      <div class="grid-2">
-        <div class="proof-card">
-          <div class="proof-tag">Gyms and fitness</div>
-          <h3>Más orden para consultas, clases y membresías</h3>
-          <p>Un gimnasio o estudio puede perder ventas por responder tarde, no registrar leads o no dar seguimiento después de una clase de prueba.</p>
-          <div class="proof-points">
-            <span>Problem solved: WhatsApp desordenado</span>
-            <span>Problem solved: clientes sin seguimiento</span>
-            <span>Problem solved: preguntas repetidas sobre horarios y precios</span>
-          </div>
-        </div>
-
-        <div class="proof-card">
-          <div class="proof-tag">Real estate</div>
-          <h3>Seguimiento claro para propiedades y visitas</h3>
-          <p>Los equipos inmobiliarios necesitan ordenar consultas, propiedades, visitas, clientes interesados y próximas acciones.</p>
-          <div class="proof-points">
-            <span>Problem solved: leads sin dueño claro</span>
-            <span>Problem solved: visitas mal coordinadas</span>
-            <span>Problem solved: datos regados entre WhatsApp y hojas</span>
-          </div>
-        </div>
-
-        <div class="proof-card">
-          <div class="proof-tag">Tourism and retreats</div>
-          <h3>Mejor flujo para preguntas, reservas y confianza</h3>
-          <p>Negocios turísticos y retiros reciben preguntas largas. El sistema debe educar, filtrar y pasar la persona correcta al contacto humano.</p>
-          <div class="proof-points">
-            <span>Problem solved: FAQs repetidas</span>
-            <span>Problem solved: consultas no calificadas</span>
-            <span>Problem solved: páginas web poco claras</span>
-          </div>
-        </div>
-
-        <div class="proof-card">
-          <div class="proof-tag">Proof block</div>
-          <h3>Small systems. Real business impact.</h3>
-          <p class="quote">“La meta no es automatizar todo. La meta es quitar fricción donde el negocio pierde dinero: respuesta lenta, seguimiento débil, tareas manuales y falta de claridad.”</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="whyme-bg">
-    <div class="container">
-      <div class="whyme-grid">
-        <div>
-          <div class="section-label">Why trust me</div>
-          <h2>Discipline, systems thinking and practical execution.</h2>
-          <p class="section-intro" style="margin-bottom: 20px;">
-            I am not trying to be a bloated agency. I work directly with business owners to find operational leaks and build simple systems around the tools they already use.
-          </p>
-          <p class="section-intro" style="margin-bottom: 0;">
-            My background as a U.S. Army veteran helps me think in terms of process, accountability and execution. My AI studies help me understand what tools are actually useful. My focus in Lima is practical business systems, not hype.
+    <section id="proof">
+      <div class="container">
+        <div class="section-head">
+          <h2>Results and experience.</h2>
+          <p>
+            The work is focused on real service businesses, especially businesses that rely on trust,
+            fast follow-up, and clear digital systems.
           </p>
         </div>
 
-        <div class="whyme-points">
-          <div>U.S. Army veteran</div>
-          <div>AI student at UMGC</div>
-          <div>Based in Lima</div>
-          <div>English and Spanish support</div>
-          <div>Builds simple systems businesses can use</div>
-          <div>Direct work with the founder</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section>
-    <div class="container">
-      <div class="section-label">Cómo funciona</div>
-      <h2>De diagnóstico a sistema funcionando.</h2>
-
-      <div class="process-grid">
-        <div class="step">
-          <span class="step-num">01 · SEND</span>
-          <h3>Me mandas tu web o Instagram</h3>
-          <p>Reviso la presencia digital y te digo qué miraría primero.</p>
-        </div>
-
-        <div class="step">
-          <span class="step-num">02 · AUDIT</span>
-          <h3>Hacemos la auditoría</h3>
-          <p>Vemos leads, WhatsApp, agenda, admin, herramientas y seguimiento.</p>
-        </div>
-
-        <div class="step">
-          <span class="step-num">03 · PLAN</span>
-          <h3>Te doy el plan</h3>
-          <p>Recibes recomendaciones claras, prioridad y próximos pasos.</p>
-        </div>
-
-        <div class="step">
-          <span class="step-num">04 · BUILD</span>
-          <h3>Construyo lo necesario</h3>
-          <p>Web, formularios, trackers, automatización, plantillas o sistemas internos.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <div id="contacto">
-    <div class="cta-final">
-      <div class="inner">
-        <div class="container">
-          <h2>¿Quieres saber dónde estás perdiendo clientes?</h2>
-          <p>Mándame tu web, Instagram o WhatsApp del negocio. Te respondo con las primeras 3 áreas que revisaría.</p>
-
-          <div class="cta-row">
-            <a href="https://wa.me/13475206792?text=Hola%2C%20quiero%20agendar%20una%20auditor%C3%ADa%20de%20sistemas%20para%20mi%20negocio." class="btn-primary">Agendar auditoría por WhatsApp</a>
-            <a href="mailto:arafaniellofjm@gmail.com?subject=Auditor%C3%ADa%20de%20Sistemas%20-%20Lima%20Systems%20Lab" class="btn-secondary">Enviar email</a>
+        <div class="grid-3">
+          <div class="card proof-card">
+            <span class="tag">Fitness</span>
+            <h3>Gym lead flow</h3>
+            <p>
+              Helped identify how gyms can lose trial class leads through slow response, unclear offers,
+              weak follow-up, and no simple intake process.
+            </p>
           </div>
 
-          <p class="cta-promise">Respondo en menos de 24 horas · Lima, Perú · English and Spanish</p>
+          <div class="card proof-card">
+            <span class="tag">Real estate</span>
+            <h3>Property inquiry systems</h3>
+            <p>
+              Built practical website and lead-handling ideas for real estate professionals who need
+              clearer property pages, faster contact, and better client intake.
+            </p>
+          </div>
+
+          <div class="card proof-card">
+            <span class="tag">Retreats</span>
+            <h3>Trust-first website strategy</h3>
+            <p>
+              Worked on website structure, safety messaging, inquiry flow, and manual screening systems
+              for a retreat business where trust matters more than aggressive selling.
+            </p>
+          </div>
+        </div>
+
+        <div class="grid-2" style="margin-top: 18px;">
+          <div class="card">
+            <p class="quote">
+              “Most small businesses do not need more tools. They need a cleaner way to handle the leads they already get.”
+            </p>
+            <p class="small">Lima Systems operating principle</p>
+          </div>
+
+          <div class="card">
+            <p class="quote">
+              “The goal is not to make the business look more technical. The goal is to make the business easier to run.”
+            </p>
+            <p class="small">Simple systems over bloated agency work</p>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
+    </section>
 
-  <footer>
-    <div class="container">
+    <section id="trust">
+      <div class="container">
+        <div class="section-head">
+          <h2>Why trust me.</h2>
+          <p>
+            I am not trying to sell a bloated agency package. I build simple, practical systems for real businesses.
+          </p>
+        </div>
+
+        <div class="grid-3">
+          <div class="card">
+            <h3>U.S. Army veteran</h3>
+            <p>
+              I bring discipline, structure, and operator thinking to messy business workflows.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>AI student and systems builder</h3>
+            <p>
+              I study AI formally and use modern tools to build practical systems, not hype.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>Based in Lima</h3>
+            <p>
+              I understand local service businesses, WhatsApp-heavy communication, and the need for simple execution.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="process">
+      <div class="container">
+        <div class="section-head">
+          <h2>How the work happens.</h2>
+          <p>
+            The process is simple. First we find the leaks. Then we fix the highest-value parts first.
+          </p>
+        </div>
+
+        <div class="grid-3">
+          <div class="card">
+            <h3>Audit</h3>
+            <p>
+              I review your website, WhatsApp flow, lead capture, follow-up, scheduling, and admin process.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>Action plan</h3>
+            <p>
+              You get a clear list of what to fix, what to ignore, and what would create the most business value.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>Build</h3>
+            <p>
+              If it makes sense, I help build the website, workflow, lead system, automation, or operating process.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="pricing" class="pricing">
+      <div class="container">
+        <div class="section-head">
+          <h2>Pricing.</h2>
+          <p>
+            Prices are shown in USD and estimated Peruvian soles. Soles are approximate and can move with exchange rates.
+          </p>
+        </div>
+
+        <div class="grid-3">
+          <div class="card price-card">
+            <span class="tag">Entry audit</span>
+            <h3>Business Systems Audit</h3>
+            <div class="price">$250</div>
+            <div class="soles">Approx. S/ 925</div>
+            <p class="price-note">
+              Best for finding where your business is losing leads, time, and money.
+            </p>
+            <ul>
+              <li>Website review</li>
+              <li>WhatsApp review</li>
+              <li>Lead follow-up review</li>
+              <li>PDF or video summary</li>
+            </ul>
+          </div>
+
+          <div class="card price-card">
+            <span class="tag">Best starting point</span>
+            <h3>Audit + Action Plan</h3>
+            <div class="price">$400</div>
+            <div class="soles">Approx. S/ 1,480</div>
+            <p class="price-note">
+              Best if you want a clearer roadmap before building anything.
+            </p>
+            <ul>
+              <li>Everything in the audit</li>
+              <li>Priority fixes</li>
+              <li>Recommended tools</li>
+              <li>Step-by-step action plan</li>
+            </ul>
+          </div>
+
+          <div class="card price-card">
+            <span class="tag">Website + leads</span>
+            <h3>Web + Lead System</h3>
+            <div class="price">$900+</div>
+            <div class="soles">Approx. S/ 3,330+</div>
+            <p class="price-note">
+              Best for businesses that need a better website and cleaner lead flow.
+            </p>
+            <ul>
+              <li>Conversion-focused website</li>
+              <li>Local SEO structure</li>
+              <li>WhatsApp and form routing</li>
+              <li>Lead capture system</li>
+            </ul>
+          </div>
+
+          <div class="card price-card">
+            <span class="tag">Custom build</span>
+            <h3>Custom Systems / Automation</h3>
+            <div class="price">$1,500+</div>
+            <div class="soles">Approx. S/ 5,550+</div>
+            <p class="price-note">
+              Best for businesses that need a custom workflow, automation, or internal operating system.
+            </p>
+            <ul>
+              <li>Workflow design</li>
+              <li>Automation setup</li>
+              <li>Admin system cleanup</li>
+              <li>Custom scope and pricing</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="seo">
+      <div class="container">
+        <div class="section-head">
+          <h2>Built for Google, humans, and AI search.</h2>
+          <p>
+            Local businesses now need clear service pages, proof, structured information, reviews, local relevance,
+            and simple pages that answer what people are actually searching for.
+          </p>
+        </div>
+
+        <div class="grid-3">
+          <div class="card">
+            <h3>Clear service + city signals</h3>
+            <p>
+              Pages should make it obvious what you do, where you do it, and who you help.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>Conversion above the fold</h3>
+            <p>
+              The top of the page should explain why someone should contact you now.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>Structured business data</h3>
+            <p>
+              Schema, social links, contact details, and clean content help Google and AI systems understand the business.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <div class="audit-box">
+          <div>
+            <h2>Want to see where your business is leaking leads?</h2>
+            <p>
+              Send me your website, Instagram, Google Business Profile, or WhatsApp flow.
+              I will tell you what I would audit first.
+            </p>
+          </div>
+
+          <div>
+            <div class="hero-actions">
+              <a class="btn btn-secondary" href="mailto:arafaniellofjm@gmail.com?subject=Business%20Systems%20Audit">
+                Email Andrew
+              </a>
+              <a class="btn btn-secondary" href="https://www.linkedin.com/in/andrewrafaniello/" target="_blank" rel="noopener">
+                LinkedIn
+              </a>
+            </div>
+
+            <p class="small" style="margin-top: 18px; color: rgba(255,255,255,0.68);">
+              Lima Systems is based in Lima, Peru and works with service businesses locally and remotely.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
       <div>
-        <div class="footer-brand">
-          <span class="footer-brand-dot"></span>
-          Lima Systems Lab
+        <div class="brand">
+          <span class="brand-mark" style="background: white; color: var(--navy);">LS</span>
+          <span>Lima Systems</span>
         </div>
-        <p class="footer-tagline">
-          Business systems audit, web, lead handling, follow-up, automation and operations support for service businesses in Lima.
+
+        <p style="margin-top: 12px;">
+          Systems, websites, lead handling, follow-up, local SEO, and automation for service businesses.
         </p>
-        <p class="footer-operator">Founded and operated by Andrew Rafaniello · U.S. Army Veteran · AI Student</p>
+
+        <div class="contact-line">
+          <a href="https://limasystems.digital/">limasystems.digital</a>
+          <a href="https://www.linkedin.com/in/andrewrafaniello/" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="mailto:arafaniellofjm@gmail.com">arafaniellofjm@gmail.com</a>
+        </div>
       </div>
 
-      <div class="footer-links">
-        <a href="https://wa.me/13475206792">WhatsApp: +1 347 520 6792</a>
-        <a href="mailto:arafaniellofjm@gmail.com">arafaniellofjm@gmail.com</a>
-        <span>Lima, Perú · © 2026</span>
-      </div>
+      <p>© 2026 Lima Systems. Built in Lima, Peru.</p>
     </div>
   </footer>
-
-  <a href="https://wa.me/13475206792?text=Hola%2C%20vi%20tu%20p%C3%A1gina%20de%20Lima%20Systems%20Lab%20y%20quiero%20conversar." class="wa-float" aria-label="Escribir por WhatsApp">
-    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-      <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448L.057 24z"/>
-    </svg>
-  </a>
 </body>
 </html>
