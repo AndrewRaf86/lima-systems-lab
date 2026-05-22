@@ -25,7 +25,7 @@
   />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://limasystems.digital/" />
-  <meta property="og:image" content="https://limasystems.digital/ar%20professional%20pic.jpeg" />
+  <meta property="og:image" content="https://limasystems.digital/AR%20professional%20pic.jpeg" />
 
   <link rel="canonical" href="https://limasystems.digital/" />
 
@@ -53,7 +53,6 @@
       --card: rgba(255, 255, 255, 0.72);
       --shadow: 0 24px 80px rgba(7, 18, 31, 0.12);
       --radius: 28px;
-      --radius-sm: 16px;
       --max: 1180px;
     }
 
@@ -92,7 +91,7 @@
       position: sticky;
       top: 0;
       z-index: 50;
-      background: rgba(250, 247, 240, 0.9);
+      background: rgba(250, 247, 240, 0.92);
       backdrop-filter: blur(16px);
       border-bottom: 1px solid var(--line);
     }
@@ -140,8 +139,8 @@
     .nav-links {
       display: flex;
       align-items: center;
-      gap: 28px;
-      font-weight: 600;
+      gap: 24px;
+      font-weight: 700;
       font-size: 0.92rem;
       color: #303947;
     }
@@ -621,6 +620,41 @@
       color: #3D4858;
     }
 
+    .expect-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 18px;
+      margin-top: 38px;
+    }
+
+    .expect-card {
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,0.72);
+      border-radius: 26px;
+      padding: 26px;
+    }
+
+    .expect-card h3 {
+      font-size: 1.65rem;
+      margin-bottom: 12px;
+    }
+
+    .expect-card p {
+      color: var(--muted);
+      margin: 0 0 16px;
+      font-size: 0.96rem;
+    }
+
+    .expect-card ul {
+      padding: 0;
+      list-style: none;
+      display: grid;
+      gap: 10px;
+      margin: 0;
+      color: #3D4858;
+      font-size: 0.95rem;
+    }
+
     .trust-grid {
       display: grid;
       grid-template-columns: 0.85fr 1.15fr;
@@ -751,7 +785,8 @@
       .pricing-grid,
       .grid-4,
       .process,
-      .proof-strip {
+      .proof-strip,
+      .expect-grid {
         grid-template-columns: repeat(2, 1fr);
       }
 
@@ -784,7 +819,8 @@
       .case-grid,
       .problem-list,
       .process,
-      .proof-strip {
+      .proof-strip,
+      .expect-grid {
         grid-template-columns: 1fr;
       }
 
@@ -817,9 +853,7 @@
     "@type": "ProfessionalService",
     "name": "Lima Systems Lab",
     "url": "https://limasystems.digital/",
-    "image": "https://limasystems.digital/ar%20professional%20pic.jpeg",
-    "telephone": "+13475206792",
-    "email": "rafanielloandrew@gmail.com",
+    "image": "https://limasystems.digital/AR%20professional%20pic.jpeg",
     "founder": {
       "@type": "Person",
       "name": "Andrew Rafaniello",
@@ -884,6 +918,7 @@
         <a href="#problemas">Problemas</a>
         <a href="#auditoria">Auditoría</a>
         <a href="#precios">Precios</a>
+        <a href="#expectativas">Qué esperar</a>
         <a href="#pruebas">Pruebas</a>
         <a href="#confianza">Confianza</a>
         <a class="nav-cta" href="https://wa.me/13475206792?text=Hola%20Andrew%2C%20quiero%20agendar%20una%20auditor%C3%ADa%20para%20mi%20negocio.">WhatsApp</a>
@@ -941,15 +976,15 @@
         <aside class="hero-card">
           <div class="photo-wrap">
             <img
-              src="ar professional pic.jpeg"
-              alt="Andrew Rafaniello, founder of Lima Systems Lab"
+              src="AR professional pic.jpeg"
+              alt="Andrew Rafaniello, fundador de Lima Systems Lab"
             />
           </div>
 
           <div class="founder-strip">
             <strong>Andrew Rafaniello</strong>
             <p>
-              Founder · Lima Systems Lab. I help service businesses fix lead handling, WhatsApp follow-up, intake, scheduling, web pages and admin bottlenecks.
+              Founder · Lima Systems Lab. Ayudo a negocios de servicios a mejorar leads, WhatsApp, seguimiento, intake, citas, páginas web y trabajo administrativo.
             </p>
           </div>
         </aside>
@@ -1233,6 +1268,75 @@
       </div>
     </section>
 
+    <section id="expectativas">
+      <div class="container">
+        <div class="section-title">
+          <h2>Qué esperar según el servicio</h2>
+          <p>
+            Cada oferta tiene un resultado distinto. La idea es empezar con claridad, no venderte algo más grande de lo necesario.
+          </p>
+        </div>
+
+        <div class="expect-grid">
+          <div class="expect-card">
+            <span class="mini-label">$250</span>
+            <h3>Business Systems Audit</h3>
+            <p>
+              Para diagnosticar rápidamente dónde se pierden leads, tiempo o dinero.
+            </p>
+            <ul>
+              <li>✓ Revisión de web, WhatsApp y seguimiento</li>
+              <li>✓ Lista de problemas por prioridad</li>
+              <li>✓ Recomendaciones iniciales</li>
+              <li>✓ Resumen claro en PDF o video</li>
+            </ul>
+          </div>
+
+          <div class="expect-card">
+            <span class="mini-label">$400</span>
+            <h3>Audit + Action Plan</h3>
+            <p>
+              Para salir con un plan concreto antes de construir cualquier sistema.
+            </p>
+            <ul>
+              <li>✓ Diagnóstico más profundo</li>
+              <li>✓ Orden de implementación</li>
+              <li>✓ Herramientas recomendadas</li>
+              <li>✓ Mapa simple del sistema ideal</li>
+            </ul>
+          </div>
+
+          <div class="expect-card">
+            <span class="mini-label">$1,200+</span>
+            <h3>Web + Lead System</h3>
+            <p>
+              Para negocios que necesitan una página más clara y un flujo de contacto más fuerte.
+            </p>
+            <ul>
+              <li>✓ Página enfocada en conversión</li>
+              <li>✓ WhatsApp y formulario conectados</li>
+              <li>✓ Copy claro por servicio</li>
+              <li>✓ SEO local básico y tracking de leads</li>
+            </ul>
+          </div>
+
+          <div class="expect-card">
+            <span class="mini-label">$2,000+</span>
+            <h3>Custom Systems / Automation</h3>
+            <p>
+              Para negocios con procesos repetitivos que ya están costando tiempo o ventas.
+            </p>
+            <ul>
+              <li>✓ Automatización con Make o n8n</li>
+              <li>✓ Intake, reservas o seguimiento</li>
+              <li>✓ CRM liviano o dashboard simple</li>
+              <li>✓ Plantillas, reportes y capacitación</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section id="pruebas">
       <div class="container">
         <div class="section-title">
@@ -1297,8 +1401,8 @@
         <div class="trust-grid">
           <div class="trust-photo">
             <img
-              src="ar professional pic.jpeg"
-              alt="Andrew Rafaniello professional founder photo"
+              src="AR professional pic.jpeg"
+              alt="Andrew Rafaniello, foto profesional"
             />
           </div>
 
@@ -1355,9 +1459,9 @@
     <section>
       <div class="container">
         <div class="section-title">
-          <h2>Qué pasa después de la auditoría</h2>
+          <h2>Proceso simple</h2>
           <p>
-            La auditoría no termina con ideas sueltas. Termina con una ruta clara para mejorar.
+            No empezamos con una herramienta. Empezamos con el problema del negocio.
           </p>
         </div>
 
@@ -1432,7 +1536,7 @@
       <div>
         <a href="mailto:rafanielloandrew@gmail.com">rafanielloandrew@gmail.com</a>
         ·
-        <a href="https://wa.me/13475206792" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+        <a href="https://wa.me/13475206792">WhatsApp</a>
         ·
         <a href="https://www.linkedin.com/in/andrewrafaniello/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
       </div>
