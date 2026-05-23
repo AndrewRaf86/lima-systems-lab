@@ -4,24 +4,24 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Lima Systems Lab | Sistemas, Web y Automatización para Negocios en Lima</title>
+  <title>Lima Systems Lab | Landing Pages, Web y Automatización para Negocios en Lima</title>
 
   <meta
     name="description"
-    content="Lima Systems Lab ayuda a negocios de servicios en Lima a encontrar fugas de leads, mejorar WhatsApp, seguimiento, citas, páginas web y procesos administrativos con sistemas simples."
+    content="Lima Systems Lab ayuda a negocios de servicios en Lima a convertir más visitas en clientes con landing pages, páginas web, WhatsApp, sistemas de leads y automatización simple."
   />
 
   <meta
     name="keywords"
-    content="automatización Lima, páginas web Lima, sistemas para negocios Lima, WhatsApp negocios Lima, automatización para empresas Perú, auditoría de negocios Lima, sistemas con IA Lima, automatización WhatsApp Lima"
+    content="landing page Lima, páginas web Lima, diseño web Lima, web para negocios Lima, WhatsApp negocios Lima, automatización Lima, sistemas para negocios Lima, páginas web para clínicas Lima, landing page Perú, automatización para empresas Perú"
   />
 
   <meta name="author" content="Andrew Rafaniello" />
 
-  <meta property="og:title" content="Lima Systems Lab | Sistemas para negocios de servicios en Lima" />
+  <meta property="og:title" content="Lima Systems Lab | Landing Pages y Sistemas para Negocios en Lima" />
   <meta
     property="og:description"
-    content="Encuentro dónde tu negocio pierde leads, tiempo y dinero. Luego construyo sistemas simples para corregirlo."
+    content="Creo landing pages, páginas web y sistemas simples para ayudar a negocios de servicios en Lima a convertir más visitas en consultas, citas y clientes."
   />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://limasystems.digital/" />
@@ -96,7 +96,7 @@
     }
 
     .nav-inner {
-      height: 76px;
+      min-height: 76px;
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -119,6 +119,7 @@
       place-items: center;
       font-weight: 800;
       letter-spacing: -0.04em;
+      flex: 0 0 auto;
     }
 
     .brand-title {
@@ -138,9 +139,9 @@
     .nav-links {
       display: flex;
       align-items: center;
-      gap: 24px;
+      gap: 22px;
       font-weight: 700;
-      font-size: 0.92rem;
+      font-size: 0.9rem;
       color: #303947;
     }
 
@@ -244,6 +245,7 @@
       border: 1px solid transparent;
       transition: 180ms ease;
       cursor: pointer;
+      text-align: center;
     }
 
     .btn-primary {
@@ -335,7 +337,7 @@
     }
 
     .section-title {
-      max-width: 800px;
+      max-width: 820px;
     }
 
     .section-title h2 {
@@ -346,11 +348,18 @@
       color: var(--muted);
       font-size: 1.1rem;
       margin: 20px 0 0;
-      max-width: 720px;
+      max-width: 740px;
     }
 
     .section-dark .section-title p {
       color: rgba(255,255,255,0.68);
+    }
+
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+      margin-top: 38px;
     }
 
     .grid-4 {
@@ -421,6 +430,41 @@
     .proof-box span {
       color: var(--muted);
       font-size: 0.92rem;
+    }
+
+    .highlight-box {
+      margin-top: 42px;
+      display: grid;
+      grid-template-columns: 0.95fr 1.05fr;
+      gap: 28px;
+      align-items: stretch;
+    }
+
+    .highlight-panel {
+      background: rgba(255,255,255,0.72);
+      border: 1px solid var(--line);
+      border-radius: 30px;
+      padding: 32px;
+      box-shadow: 0 14px 48px rgba(7, 18, 31, 0.05);
+    }
+
+    .highlight-panel.dark {
+      background: var(--dark);
+      color: var(--white);
+    }
+
+    .highlight-panel h3 {
+      font-size: 2.3rem;
+      margin-bottom: 16px;
+    }
+
+    .highlight-panel p {
+      color: var(--muted);
+      margin: 0;
+    }
+
+    .highlight-panel.dark p {
+      color: rgba(255,255,255,0.72);
     }
 
     .problem-list {
@@ -523,7 +567,7 @@
       border: 1px solid rgba(255,255,255,0.1);
       border-radius: 26px;
       padding: 28px 24px;
-      min-height: 570px;
+      min-height: 560px;
       display: flex;
       flex-direction: column;
     }
@@ -808,7 +852,8 @@
     @media (max-width: 1040px) {
       .hero-grid,
       .audit-box,
-      .trust-grid {
+      .trust-grid,
+      .highlight-box {
         grid-template-columns: 1fr;
       }
 
@@ -844,6 +889,7 @@
         padding: 58px 0 62px;
       }
 
+      .grid-3,
       .grid-4,
       .pricing-grid,
       .case-grid,
@@ -899,21 +945,21 @@
       "addressLocality": "Lima",
       "addressCountry": "PE"
     },
-    "description": "Sistemas, páginas web, automatización, auditorías de leads, WhatsApp, seguimiento, citas y operaciones para negocios de servicios en Lima.",
+    "description": "Landing pages, páginas web, sistemas de leads, automatización, WhatsApp, seguimiento, citas y operaciones para negocios de servicios en Lima.",
     "sameAs": [
       "https://www.linkedin.com/in/andrewrafaniello/"
     ],
     "offers": [
       {
         "@type": "Offer",
-        "name": "Business Systems Audit",
-        "price": "250",
+        "name": "Basic Landing Page",
+        "price": "500",
         "priceCurrency": "USD"
       },
       {
         "@type": "Offer",
-        "name": "Audit + Action Plan",
-        "price": "400",
+        "name": "Stronger Landing Page",
+        "price": "700",
         "priceCurrency": "USD"
       },
       {
@@ -940,19 +986,18 @@
         <div class="brand-mark">LSL</div>
         <div>
           <div class="brand-title">Lima Systems Lab</div>
-          <div class="brand-sub">Sistemas · Web · Automatización</div>
+          <div class="brand-sub">Landing Pages · Web · Automatización</div>
         </div>
       </a>
 
       <nav class="nav-links" aria-label="Navegación principal">
+        <a href="#landing-pages">Landing Pages</a>
         <a href="#para-quien">Para quién</a>
         <a href="#problemas">Problemas</a>
-        <a href="#auditoria">Auditoría</a>
         <a href="#precios">Precios</a>
         <a href="#elegir-servicio">Cuál elegir</a>
-        <a href="#pruebas">Pruebas</a>
         <a href="#confianza">Confianza</a>
-        <a class="nav-cta" href="https://wa.me/13475206792?text=Hola%20Andrew%2C%20quiero%20agendar%20una%20auditor%C3%ADa%20para%20mi%20negocio.">WhatsApp</a>
+        <a class="nav-cta" href="https://wa.me/13475206792?text=Hola%20Andrew%2C%20quiero%20hablar%20sobre%20una%20landing%20page%20o%20web%20para%20mi%20negocio.">WhatsApp</a>
       </nav>
     </div>
   </header>
@@ -963,25 +1008,26 @@
         <div>
           <div class="eyebrow">
             <span class="dot"></span>
-            Para negocios de servicios en Lima
+            Landing pages, web y sistemas simples para negocios en Lima
           </div>
 
           <h1>
-            Puede que su negocio ya esté perdiendo
-            <span class="accent">clientes, dinero y tiempo.</span>
+            Convierto su presencia online en
+            <span class="accent">más consultas, citas y clientes.</span>
           </h1>
 
           <p class="hero-copy">
-            Audito su web, WhatsApp, seguimiento de leads, citas, formularios y trabajo administrativo.
-            Luego creo sistemas simples para que responda más rápido, pierda menos oportunidades y opere con menos desorden.
+            Creo landing pages, páginas web y sistemas de leads para negocios de servicios en Lima.
+            La meta no es sólo verse bien. La meta es que más personas entiendan su oferta,
+            confíen en su negocio y le escriban por WhatsApp, formulario o llamada.
           </p>
 
           <div class="hero-actions">
             <a
               class="btn btn-primary"
-              href="https://wa.me/13475206792?text=Hola%20Andrew%2C%20me%20interesa%20una%20Business%20Systems%20Audit%20de%20%24250."
+              href="https://wa.me/13475206792?text=Hola%20Andrew%2C%20me%20interesa%20una%20landing%20page%20para%20mi%20negocio."
             >
-              Agendar auditoría
+              Cotizar landing page
             </a>
 
             <a
@@ -993,10 +1039,10 @@
           </div>
 
           <div class="trust-pills">
-            <span class="pill">Veterano del Ejército de EE. UU.</span>
-            <span class="pill">Estudiante de inteligencia artificial</span>
+            <span class="pill">Landing pages desde $500</span>
+            <span class="pill">Web + leads desde $1,200</span>
             <span class="pill">Basado en Lima</span>
-            <span class="pill">Sistemas simples, no teoría</span>
+            <span class="pill">Automatización cuando tiene sentido</span>
           </div>
 
           <p class="lang-note">
@@ -1015,7 +1061,7 @@
           <div class="founder-strip">
             <strong>Andrew Rafaniello</strong>
             <p>
-              Fundador · Lima Systems Lab. Ayudo a negocios de servicios a mejorar sus leads, WhatsApp, seguimiento, captación, citas, páginas web y trabajo administrativo.
+              Fundador · Lima Systems Lab. Ayudo a negocios de servicios a mejorar su web, WhatsApp, seguimiento, captación de leads, citas y procesos internos.
             </p>
           </div>
         </aside>
@@ -1025,42 +1071,104 @@
     <section>
       <div class="container">
         <div class="section-title">
-          <h2>La mayoría de negocios no necesita más herramientas.</h2>
+          <h2>Una buena página no es decoración. Es una herramienta de ventas.</h2>
           <p>
-            Lo que necesita es saber dónde está perdiendo clientes y qué sistema simple puede corregirlo.
+            Muchos negocios tienen Instagram, buenas fotos o buenas reseñas, pero no tienen una página clara que convierta esa atención en clientes reales.
           </p>
         </div>
 
         <div class="proof-strip">
           <div class="proof-box">
-            <strong>Leads</strong>
-            <span>Formularios, WhatsApp, llamadas y velocidad de respuesta.</span>
+            <strong>Atención</strong>
+            <span>La persona ve su negocio en Google, Instagram, Maps o por recomendación.</span>
           </div>
 
           <div class="proof-box">
-            <strong>Citas</strong>
-            <span>Reservas, confirmaciones y seguimiento.</span>
+            <strong>Confianza</strong>
+            <span>La página explica quién es, qué ofrece, dónde está y por qué confiar.</span>
           </div>
 
           <div class="proof-box">
-            <strong>Web</strong>
-            <span>Confianza, conversión y SEO local básico.</span>
+            <strong>Acción</strong>
+            <span>El visitante tiene un botón claro para escribir por WhatsApp o enviar un formulario.</span>
           </div>
 
           <div class="proof-box">
-            <strong>Operaciones</strong>
-            <span>Sistemas, plantillas y automatizaciones simples.</span>
+            <strong>Seguimiento</strong>
+            <span>El lead queda más ordenado para responder, cerrar o dar seguimiento.</span>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="para-quien" class="section-dark">
+    <section id="landing-pages" class="section-dark">
+      <div class="container">
+        <div class="section-title">
+          <h2>Especialidad: landing pages y páginas web que generan consultas</h2>
+          <p>
+            Este es el punto de entrada más simple para muchos negocios. Antes de automatizar todo,
+            primero necesita una página clara que convierta visitas en mensajes, citas, reservas o cotizaciones.
+          </p>
+        </div>
+
+        <div class="highlight-box">
+          <div class="highlight-panel dark">
+            <span class="mini-label">Oferta principal</span>
+            <h3>Landing Page + Lead Flow</h3>
+            <p>
+              Una página enfocada en una meta: que la persona entienda rápido el valor del negocio
+              y tome acción. Puede ser escribir por WhatsApp, pedir una cotización, reservar una cita
+              o solicitar más información.
+            </p>
+          </div>
+
+          <div class="highlight-panel">
+            <ul class="check-list">
+              <li><span class="check">✓</span><span>Mensaje claro de qué ofrece el negocio y para quién es.</span></li>
+              <li><span class="check">✓</span><span>Diseño profesional y móvil para que se vea bien en celulares.</span></li>
+              <li><span class="check">✓</span><span>Botones de WhatsApp visibles y conectados al mensaje correcto.</span></li>
+              <li><span class="check">✓</span><span>Secciones de confianza con fotos, reseñas, ubicación, proceso o prueba social.</span></li>
+              <li><span class="check">✓</span><span>Formulario simple si el negocio necesita captar datos del lead.</span></li>
+              <li><span class="check">✓</span><span>SEO local básico para servicio, ciudad y zona.</span></li>
+              <li><span class="check">✓</span><span>Estructura pensada para convertir visitantes en oportunidades reales.</span></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="grid-3">
+          <div class="card">
+            <span class="mini-label">Por qué ayuda</span>
+            <h3>Convierte atención en consultas</h3>
+            <p>
+              Si alguien ya vio su Instagram, Google Maps o recomendación, la página debe hacer que escribirle sea fácil y obvio.
+            </p>
+          </div>
+
+          <div class="card">
+            <span class="mini-label">Por qué importa</span>
+            <h3>Reduce dudas antes del contacto</h3>
+            <p>
+              Una buena página responde preguntas básicas: qué ofrece, precio o rango, ubicación, proceso, confianza y siguiente paso.
+            </p>
+          </div>
+
+          <div class="card">
+            <span class="mini-label">Resultado buscado</span>
+            <h3>Más leads ordenados</h3>
+            <p>
+              No se trata sólo de tener visitas. Se trata de recibir mensajes, formularios, citas o cotizaciones con mejor intención.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="para-quien">
       <div class="container">
         <div class="section-title">
           <h2>Para quién es esto</h2>
           <p>
-            Trabajo mejor con negocios donde cada lead, cotización o mensaje puede convertirse en ingreso.
+            Trabajo mejor con negocios donde cada lead, cotización, cita o mensaje puede convertirse en ingreso.
           </p>
         </div>
 
@@ -1069,7 +1177,7 @@
             <span class="mini-label">Fitness</span>
             <h3>Gimnasios y estudios</h3>
             <p>
-              Para negocios que reciben mensajes por WhatsApp o Instagram, pero no tienen buen seguimiento, reservas o cierre de clientes.
+              Para gimnasios, boxing, pilates, yoga, CrossFit y studios que necesitan convertir más mensajes en visitas, pruebas o membresías.
             </p>
           </div>
 
@@ -1077,15 +1185,15 @@
             <span class="mini-label">Inmuebles</span>
             <h3>Bienes raíces</h3>
             <p>
-              Para agentes y equipos que necesitan mejores páginas, formularios, seguimiento de leads y procesos de consulta.
+              Para agentes y equipos que necesitan una página más confiable, mejor WhatsApp, formularios y seguimiento de consultas.
             </p>
           </div>
 
           <div class="card">
-            <span class="mini-label">Salud</span>
-            <h3>Clínicas y citas</h3>
+            <span class="mini-label">Salud y belleza</span>
+            <h3>Clínicas, estética y citas</h3>
             <p>
-              Para negocios con agendas, consultas, admisiones, recordatorios, formularios y trabajo administrativo repetitivo.
+              Para clínicas, dentistas, estética, terapia, bienestar, salones, barbers y medspas que trabajan con citas y confianza.
             </p>
           </div>
 
@@ -1093,7 +1201,7 @@
             <span class="mini-label">Turismo</span>
             <h3>Retreats y servicios premium</h3>
             <p>
-              Para turismo, experiencias, retiros y servicios premium que necesitan más confianza, mejor captación y respuestas rápidas.
+              Para turismo, tours privados, retiros y experiencias premium que necesitan explicar mejor su valor y captar consultas serias.
             </p>
           </div>
         </div>
@@ -1105,50 +1213,50 @@
         <div class="section-title">
           <h2>Problemas que resuelvo</h2>
           <p>
-            No empiezo vendiendo “IA”. Empiezo buscando fugas reales dentro del negocio.
+            No empiezo vendiendo “IA”. Empiezo buscando dónde el negocio pierde clientes, confianza o seguimiento.
           </p>
         </div>
 
         <div class="problem-list">
           <div class="problem">
+            <strong>No tiene una página clara</strong>
+            <p>
+              El negocio depende de Instagram, WhatsApp o referencias, pero no tiene una página que explique bien la oferta y convierta.
+            </p>
+          </div>
+
+          <div class="problem">
+            <strong>La web se ve vieja o confusa</strong>
+            <p>
+              La página existe, pero no genera confianza, no muestra bien los servicios y no guía al visitante al siguiente paso.
+            </p>
+          </div>
+
+          <div class="problem">
             <strong>Leads que llegan pero no se convierten</strong>
             <p>
-              La gente pregunta por WhatsApp, Instagram o la web, pero no recibe una respuesta clara, rápida o con seguimiento. Cada respuesta perdida es una venta perdida.
+              La gente pregunta por WhatsApp, Instagram o la web, pero no recibe una respuesta clara, rápida o con seguimiento.
             </p>
           </div>
 
           <div class="problem">
             <strong>WhatsApp desordenado</strong>
             <p>
-              Mensajes mezclados, clientes olvidados, sin etiquetas, sin plantillas y con demasiado seguimiento manual. Eso frena todo el negocio.
+              Mensajes mezclados, clientes olvidados, sin etiquetas, sin plantillas y con demasiado seguimiento manual.
             </p>
           </div>
 
           <div class="problem">
             <strong>Citas y reservas lentas</strong>
             <p>
-              El cliente quiere avanzar, pero el proceso tiene demasiados pasos, preguntas repetidas o mala confirmación. Esa demora hace que se vaya.
-            </p>
-          </div>
-
-          <div class="problem">
-            <strong>Página web que no convierte</strong>
-            <p>
-              La web se ve bonita, pero no explica bien el servicio, no genera confianza y no lleva al cliente a actuar. El visitante entra y se va sin escribir.
+              El cliente quiere avanzar, pero el proceso tiene demasiados pasos, preguntas repetidas o mala confirmación.
             </p>
           </div>
 
           <div class="problem">
             <strong>Trabajo administrativo manual</strong>
             <p>
-              El equipo pierde horas copiando datos, respondiendo lo mismo, buscando información o actualizando hojas. Ese tiempo se acumula rápido.
-            </p>
-          </div>
-
-          <div class="problem">
-            <strong>Gasto en herramientas que no se usan</strong>
-            <p>
-              El negocio paga software, IA o plataformas, pero nadie tiene un sistema claro para usarlos bien. Se pierde dinero dos veces: en herramientas y en eficiencia.
+              El equipo pierde horas copiando datos, respondiendo lo mismo, buscando información o actualizando hojas.
             </p>
           </div>
         </div>
@@ -1158,29 +1266,28 @@
     <section id="auditoria" class="section-dark">
       <div class="container">
         <div class="section-title">
-          <h2>Lo que recibe en la auditoría</h2>
+          <h2>Auditoría de web, leads y operaciones</h2>
           <p>
-            Una revisión práctica de dónde el negocio está perdiendo tiempo, dinero y clientes.
+            Si no sabe qué necesita primero, empiece con una revisión práctica. Analizo dónde se pierden clientes, tiempo o dinero.
           </p>
         </div>
 
         <div class="audit-box">
           <div class="card">
             <span class="mini-label">Diagnóstico inicial</span>
-            <h3>Auditoría de sistemas de negocio</h3>
+            <h3>Business Systems Audit</h3>
             <p>
-              Reviso su presencia digital y su operación básica como si yo fuera un cliente real tratando de contactarlo, reservar o comprar.
+              Reviso su web, landing page, WhatsApp, formularios, seguimiento, citas y operación básica como si fuera un cliente real tratando de contactarlo.
             </p>
           </div>
 
           <div class="card">
             <ul class="check-list">
-              <li><span class="check">✓</span><span>Revisión de la web y presencia digital.</span></li>
+              <li><span class="check">✓</span><span>Revisión de página web, landing page o presencia digital.</span></li>
               <li><span class="check">✓</span><span>Revisión de WhatsApp, Instagram o canales donde llegan los leads.</span></li>
-              <li><span class="check">✓</span><span>Revisión del seguimiento de leads y velocidad de respuesta.</span></li>
-              <li><span class="check">✓</span><span>Revisión de citas, reservas, captación y flujo de contacto.</span></li>
-              <li><span class="check">✓</span><span>Revisión de cuellos de botella administrativos.</span></li>
-              <li><span class="check">✓</span><span>Revisión de herramientas, software y posibles gastos innecesarios.</span></li>
+              <li><span class="check">✓</span><span>Revisión del mensaje, oferta, confianza y llamadas a la acción.</span></li>
+              <li><span class="check">✓</span><span>Revisión de formularios, citas, reservas, captación y flujo de contacto.</span></li>
+              <li><span class="check">✓</span><span>Revisión de seguimiento de leads y velocidad de respuesta.</span></li>
               <li><span class="check">✓</span><span>Lista priorizada de problemas de mayor impacto.</span></li>
               <li><span class="check">✓</span><span>Resumen en PDF o video con próximos pasos claros.</span></li>
             </ul>
@@ -1194,87 +1301,87 @@
         <div class="section-title">
           <h2>Precios</h2>
           <p>
-            Empiece con una auditoría. Construimos sólo si tiene sentido para el negocio.
+            Empiece con una página clara. Agregue sistema de leads o automatización sólo cuando tenga sentido.
           </p>
         </div>
 
         <p class="pricing-intro">
           Los precios están en dólares para mantener claridad. El equivalente en soles es aproximado y puede variar según el tipo de cambio.
+          No vendo “sólo una página”. Construyo una forma más clara de convertir atención en consultas, citas y clientes.
         </p>
 
         <div class="pricing-logic">
           <div class="logic-box">
-            <strong>Audit</strong>
-            Muestro qué está roto.
+            <strong>Basic Landing Page</strong>
+            Una página simple para un servicio.
           </div>
           <div class="logic-box">
-            <strong>Audit + Action Plan</strong>
-            Muestro qué está roto y cómo corregirlo.
+            <strong>Stronger Landing Page</strong>
+            Más secciones, confianza y SEO básico.
           </div>
           <div class="logic-box">
             <strong>Web + Lead System</strong>
-            Construyo el sistema frontal para captar leads.
+            Página más flujo de leads y seguimiento.
           </div>
           <div class="logic-box">
             <strong>Custom Automation</strong>
-            Construyo el sistema interno de operación.
+            Sistema interno para procesos repetitivos.
           </div>
         </div>
 
         <div class="pricing-grid">
-          <div class="price-card">
-            <h3>Business Systems Audit</h3>
-            <p>Diagnóstico claro de dónde su negocio está perdiendo leads, tiempo y dinero.</p>
+          <div class="price-card featured">
+            <div class="badge">Entrada recomendada</div>
+            <h3>Basic Landing Page</h3>
+            <p>Una página simple y profesional para convertir visitantes en consultas por WhatsApp o formulario.</p>
 
-            <div class="price">$250</div>
-            <div class="soles">Aprox. S/ 925 · pago único</div>
+            <div class="price">$500</div>
+            <div class="soles">Aprox. S/ 1,850 · desde</div>
 
             <ul>
-              <li><span class="check">✓</span><span>Website, WhatsApp y flujo de contacto</span></li>
-              <li><span class="check">✓</span><span>Revisión de seguimiento de leads</span></li>
-              <li><span class="check">✓</span><span>Revisión de citas e intake</span></li>
-              <li><span class="check">✓</span><span>Revisión de cuellos administrativos</span></li>
-              <li><span class="check">✓</span><span>Lista de problemas por prioridad</span></li>
-              <li><span class="check">✓</span><span>Resumen corto en PDF o video</span></li>
+              <li><span class="check">✓</span><span>Una página para un servicio principal</span></li>
+              <li><span class="check">✓</span><span>Diseño móvil y limpio</span></li>
+              <li><span class="check">✓</span><span>Copy básico para explicar la oferta</span></li>
+              <li><span class="check">✓</span><span>Botón de WhatsApp conectado</span></li>
+              <li><span class="check">✓</span><span>Sección de servicios y confianza</span></li>
+              <li><span class="check">✓</span><span>Publicación básica en dominio existente</span></li>
             </ul>
 
             <a
               class="btn"
-              href="https://wa.me/13475206792?text=Hola%20Andrew%2C%20me%20interesa%20la%20Business%20Systems%20Audit%20de%20%24250."
+              href="https://wa.me/13475206792?text=Hola%20Andrew%2C%20me%20interesa%20una%20Basic%20Landing%20Page%20de%20%24500%20para%20mi%20negocio."
             >
-              Pedir diagnóstico
+              Pedir landing page
             </a>
           </div>
 
-          <div class="price-card featured">
-            <div class="badge">Más claro para empezar</div>
-            <h3>Audit + Action Plan</h3>
-            <p>La auditoría más un plan práctico que muestra qué corregir primero y cómo hacerlo.</p>
+          <div class="price-card">
+            <h3>Stronger Landing Page</h3>
+            <p>Una landing más completa para negocios que necesitan más confianza, más contenido y mejor conversión.</p>
 
-            <div class="price">$400</div>
-            <div class="soles">Aprox. S/ 1,480 · pago único</div>
+            <div class="price">$700</div>
+            <div class="soles">Aprox. S/ 2,590 · desde</div>
 
             <ul>
-              <li><span class="check">✓</span><span>Todo lo incluido en la auditoría</span></li>
-              <li><span class="check">✓</span><span>Plan de acción paso a paso</span></li>
-              <li><span class="check">✓</span><span>Herramientas recomendadas</span></li>
-              <li><span class="check">✓</span><span>Orden de implementación</span></li>
-              <li><span class="check">✓</span><span>Mapa simple del sistema ideal</span></li>
-              <li><span class="check">✓</span><span>Qué automatizar, simplificar o ignorar</span></li>
-              <li><span class="check">✓</span><span>Llamada de revisión de 30 minutos</span></li>
+              <li><span class="check">✓</span><span>Todo lo de la landing básica</span></li>
+              <li><span class="check">✓</span><span>Más secciones de venta y confianza</span></li>
+              <li><span class="check">✓</span><span>FAQ para resolver dudas comunes</span></li>
+              <li><span class="check">✓</span><span>Google Maps o ubicación</span></li>
+              <li><span class="check">✓</span><span>SEO local básico</span></li>
+              <li><span class="check">✓</span><span>Mejor estructura para convertir leads</span></li>
             </ul>
 
             <a
               class="btn"
-              href="https://wa.me/13475206792?text=Hola%20Andrew%2C%20me%20interesa%20el%20Audit%20%2B%20Action%20Plan%20de%20%24400."
+              href="https://wa.me/13475206792?text=Hola%20Andrew%2C%20me%20interesa%20una%20Stronger%20Landing%20Page%20de%20%24700%20para%20mi%20negocio."
             >
-              Pedir plan de acción
+              Cotizar landing fuerte
             </a>
           </div>
 
           <div class="price-card">
             <h3>Web + Lead System</h3>
-            <p>Construyo la página y el flujo de contacto para captar y organizar mejor los leads.</p>
+            <p>Para negocios que necesitan más que una página: captación, formularios, tracking y flujo de seguimiento.</p>
 
             <div class="price">$1,200+</div>
             <div class="soles">Aprox. S/ 4,440+ · desde</div>
@@ -1298,7 +1405,7 @@
 
           <div class="price-card">
             <h3>Custom Systems / Automation</h3>
-            <p>Construyo el sistema interno para procesos repetitivos, captación, seguimiento y operaciones.</p>
+            <p>Para negocios con procesos repetitivos, captación, seguimiento, reservas, reportes u operación interna.</p>
 
             <div class="price">$2,000+</div>
             <div class="soles">Aprox. S/ 7,400+ · desde</div>
@@ -1328,49 +1435,46 @@
         <div class="section-title">
           <h2>Cuál servicio elegir</h2>
           <p>
-            No todos los negocios necesitan una web nueva o una automatización grande.
-            La idea es empezar con el problema correcto y construir sólo si tiene sentido.
+            No todos los negocios necesitan automatización. Muchos primero necesitan una página clara que convierta mejor.
           </p>
         </div>
 
         <div class="choice-grid">
           <div class="choice-card">
-            <span class="mini-label">$250 · Diagnóstico</span>
-            <h3>Elija la auditoría si...</h3>
+            <span class="mini-label">$500 · Página simple</span>
+            <h3>Elija Basic Landing Page si...</h3>
             <p>
-              No está seguro dónde se pierden leads, tiempo o dinero.
-              Es el mejor primer paso si quiere una revisión clara antes de pagar por algo más grande.
+              Quiere una página profesional para un servicio principal y necesita que la gente le escriba por WhatsApp.
             </p>
             <ul>
-              <li><span class="check">✓</span><span>Quiere saber qué está roto.</span></li>
-              <li><span class="check">✓</span><span>Tiene WhatsApp, web o seguimiento desordenado.</span></li>
-              <li><span class="check">✓</span><span>Quiere una lista de problemas por prioridad.</span></li>
+              <li><span class="check">✓</span><span>No tiene web o su página actual está débil.</span></li>
+              <li><span class="check">✓</span><span>Quiere algo simple y rápido para verse más confiable.</span></li>
+              <li><span class="check">✓</span><span>Un nuevo cliente puede pagar la inversión.</span></li>
             </ul>
             <a
               class="btn"
-              href="https://wa.me/13475206792?text=Hola%20Andrew%2C%20me%20interesa%20la%20Business%20Systems%20Audit%20de%20%24250."
+              href="https://wa.me/13475206792?text=Hola%20Andrew%2C%20me%20interesa%20una%20Basic%20Landing%20Page%20de%20%24500%20para%20mi%20negocio."
             >
-              Pedir diagnóstico
+              Pedir landing
             </a>
           </div>
 
           <div class="choice-card">
-            <span class="mini-label">$400 · Diagnóstico + plan</span>
-            <h3>Elija Audit + Action Plan si...</h3>
+            <span class="mini-label">$700 · Más completa</span>
+            <h3>Elija Stronger Landing Page si...</h3>
             <p>
-              Ya sabe que hay problemas, pero necesita saber qué arreglar primero,
-              qué herramientas usar y en qué orden implementar los cambios.
+              Necesita más contenido, más confianza, preguntas frecuentes, ubicación y mejor estructura para convertir.
             </p>
             <ul>
-              <li><span class="check">✓</span><span>Quiere una ruta clara antes de construir.</span></li>
-              <li><span class="check">✓</span><span>Necesita saber qué automatizar, simplificar o ignorar.</span></li>
-              <li><span class="check">✓</span><span>Quiere una llamada de revisión de 30 minutos.</span></li>
+              <li><span class="check">✓</span><span>Vende un servicio que requiere confianza.</span></li>
+              <li><span class="check">✓</span><span>Quiere responder dudas antes de que el cliente escriba.</span></li>
+              <li><span class="check">✓</span><span>Quiere SEO local básico y mejor presentación.</span></li>
             </ul>
             <a
               class="btn"
-              href="https://wa.me/13475206792?text=Hola%20Andrew%2C%20me%20interesa%20el%20Audit%20%2B%20Action%20Plan%20de%20%24400."
+              href="https://wa.me/13475206792?text=Hola%20Andrew%2C%20me%20interesa%20una%20Stronger%20Landing%20Page%20de%20%24700%20para%20mi%20negocio."
             >
-              Pedir plan
+              Pedir landing fuerte
             </a>
           </div>
 
@@ -1378,13 +1482,12 @@
             <span class="mini-label">$1,200+ · Web + leads</span>
             <h3>Elija Web + Lead System si...</h3>
             <p>
-              Su web o landing page no está convirtiendo bien y necesita un flujo más claro
-              para captar leads, conectar WhatsApp, recibir formularios y dar seguimiento.
+              Necesita una web más fuerte con formulario, WhatsApp, tracking y flujo básico para organizar los leads.
             </p>
             <ul>
-              <li><span class="check">✓</span><span>Su página no genera confianza o consultas.</span></li>
-              <li><span class="check">✓</span><span>Quiere una estructura enfocada en conversión.</span></li>
-              <li><span class="check">✓</span><span>Necesita WhatsApp, formulario y tracking de leads.</span></li>
+              <li><span class="check">✓</span><span>Recibe consultas desde varias fuentes.</span></li>
+              <li><span class="check">✓</span><span>Necesita captar y organizar mejor los leads.</span></li>
+              <li><span class="check">✓</span><span>Quiere una estructura más completa que una landing simple.</span></li>
             </ul>
             <a
               class="btn"
@@ -1399,7 +1502,6 @@
             <h3>Elija Custom Automation si...</h3>
             <p>
               Ya tiene procesos repetitivos que están costando tiempo, ventas o energía del equipo.
-              Esto es para construir el sistema interno, no sólo la página.
             </p>
             <ul>
               <li><span class="check">✓</span><span>Repite el mismo trabajo administrativo cada semana.</span></li>
@@ -1422,7 +1524,7 @@
         <div class="section-title">
           <h2>Experiencia y casos de uso</h2>
           <p>
-            Mientras sumo testimonios reales de clientes, esta sección muestra el tipo de problemas que ya he trabajado y los resultados que busco crear.
+            Mientras sumo testimonios reales de clientes, esta sección muestra el tipo de problemas que trabajo y los resultados que busco crear.
           </p>
         </div>
 
@@ -1431,11 +1533,11 @@
             <span class="mini-label">Fitness</span>
             <h3>Gimnasios y negocios con membresías</h3>
             <p>
-              Problema típico: los leads llegan por WhatsApp o Instagram, pero el seguimiento depende de la memoria, mensajes manuales y respuestas sueltas.
+              Problema típico: tienen Instagram activo, pero no una página clara que convierta interesados en visitas, pruebas o membresías.
             </p>
             <ul>
-              <li>✓ Plantillas de respuesta mejores</li>
-              <li>✓ Seguimiento más claro para leads nuevos</li>
+              <li>✓ Landing page para explicar la oferta</li>
+              <li>✓ WhatsApp visible y mensaje prellenado</li>
               <li>✓ Flujo más simple para citas o visitas</li>
             </ul>
           </div>
@@ -1444,7 +1546,7 @@
             <span class="mini-label">Bienes raíces</span>
             <h3>Agentes y equipos inmobiliarios</h3>
             <p>
-              Problema típico: las consultas llegan por varias fuentes, pero no hay un proceso simple para calificar, responder y organizar oportunidades.
+              Problema típico: reciben consultas de varias fuentes, pero la presentación online no genera suficiente confianza ni orden.
             </p>
             <ul>
               <li>✓ Página con más confianza</li>
@@ -1454,10 +1556,10 @@
           </div>
 
           <div class="case-card">
-            <span class="mini-label">Retiros / turismo</span>
-            <h3>Negocios premium y experiencias</h3>
+            <span class="mini-label">Clínicas / Turismo</span>
+            <h3>Negocios con citas o experiencias</h3>
             <p>
-              Problema típico: el cliente necesita confianza antes de escribir, pero la web no explica bien el proceso, la seguridad, los precios o los siguientes pasos.
+              Problema típico: el cliente necesita entender el proceso antes de escribir, pero la página no explica bien precios, ubicación, confianza o próximos pasos.
             </p>
             <ul>
               <li>✓ Mejor estructura de contenido</li>
@@ -1474,7 +1576,8 @@
         <div class="section-title">
           <h2>Por qué confiar en mí</h2>
           <p>
-            Soy Andrew Rafaniello, fundador de Lima Systems Lab. No vendo sistemas complicados. Ayudo a negocios reales a operar mejor con herramientas simples.
+            Soy Andrew Rafaniello, fundador de Lima Systems Lab. No vendo páginas genéricas ni sistemas complicados.
+            Ayudo a negocios reales a verse más confiables, captar más consultas y operar con más orden.
           </p>
         </div>
 
@@ -1500,12 +1603,12 @@
 
               <li>
                 <span class="check">✓</span>
-                <span><strong>Basado en Lima</strong><br />Entiendo cómo usan WhatsApp, Instagram, Google Maps, referidos y citas los negocios locales.</span>
+                <span><strong>Basado en Lima</strong><br />Entiendo cómo los negocios locales usan WhatsApp, Instagram, Google Maps, referidos y citas.</span>
               </li>
 
               <li>
                 <span class="check">✓</span>
-                <span><strong>Constructor de sistemas simples</strong><br />No estoy tratando de vender software innecesario. Construyo sólo si tiene sentido para el negocio.</span>
+                <span><strong>Web primero, automatización después</strong><br />Si la página no convierte, primero arreglamos la captación. Después automatizamos si conviene.</span>
               </li>
 
               <li>
@@ -1541,7 +1644,7 @@
         <div class="section-title">
           <h2>Proceso simple</h2>
           <p>
-            No empezamos con una herramienta. Empezamos con el problema del negocio.
+            No empezamos con una herramienta. Empezamos con el problema del negocio y el camino más corto hacia más consultas.
           </p>
         </div>
 
@@ -1549,25 +1652,25 @@
           <div class="step">
             <div class="step-number">1</div>
             <strong>Reviso</strong>
-            <p>Analizo su web, WhatsApp, seguimiento, citas, captación, herramientas y operación básica.</p>
+            <p>Analizo su web, Instagram, WhatsApp, oferta, servicios, confianza, contacto y seguimiento.</p>
           </div>
 
           <div class="step">
             <div class="step-number">2</div>
             <strong>Priorizo</strong>
-            <p>Separo lo urgente de lo secundario para saber qué puede tener mayor impacto primero.</p>
+            <p>Defino si necesita landing page, web más completa, sistema de leads o automatización interna.</p>
           </div>
 
           <div class="step">
             <div class="step-number">3</div>
-            <strong>Recomiendo</strong>
-            <p>Le doy recomendaciones claras en PDF o video, sin lenguaje técnico innecesario.</p>
+            <strong>Construyo</strong>
+            <p>Creo la página, botones, formularios, estructura, copy y flujo básico para captar oportunidades.</p>
           </div>
 
           <div class="step">
             <div class="step-number">4</div>
-            <strong>Construimos si conviene</strong>
-            <p>Si tiene sentido, puedo ayudarle con la web, el sistema de leads, la automatización o el proceso interno.</p>
+            <strong>Mejoramos</strong>
+            <p>Si tiene sentido, agregamos seguimiento, tracking, automatización, plantillas o procesos internos.</p>
           </div>
         </div>
       </div>
@@ -1575,22 +1678,23 @@
 
     <section class="cta">
       <div class="container cta-box">
-        <h2>Puede que su negocio ya esté perdiendo clientes sin darse cuenta.</h2>
+        <h2>Su negocio puede estar recibiendo atención, pero perdiendo clientes.</h2>
         <p>
-          Si recibe mensajes, llamadas, reservas o consultas, pero el seguimiento es lento o desordenado, una auditoría puede mostrarle dónde se está escapando el dinero.
+          Si las personas ven su Instagram, Google Maps o recomendación, pero no terminan escribiendo, reservando o cotizando,
+          una landing page clara puede convertir esa atención en oportunidades reales.
         </p>
 
         <div class="hero-actions">
           <a
             class="btn btn-secondary"
-            href="https://wa.me/13475206792?text=Hola%20Andrew%2C%20quiero%20agendar%20una%20auditor%C3%ADa%20para%20mi%20negocio."
+            href="https://wa.me/13475206792?text=Hola%20Andrew%2C%20quiero%20hablar%20sobre%20una%20landing%20page%20o%20web%20para%20mi%20negocio."
           >
             Escribir por WhatsApp
           </a>
 
           <a
             class="btn btn-primary"
-            href="mailto:rafanielloandrew@gmail.com?subject=Auditor%C3%ADa%20para%20mi%20negocio"
+            href="mailto:rafanielloandrew@gmail.com?subject=Landing%20page%20o%20web%20para%20mi%20negocio"
           >
             Enviar correo
           </a>
@@ -1601,7 +1705,7 @@
 
   <a
     class="whatsapp-float"
-    href="https://wa.me/13475206792?text=Hola%20Andrew%2C%20quiero%20agendar%20una%20auditor%C3%ADa%20para%20mi%20negocio."
+    href="https://wa.me/13475206792?text=Hola%20Andrew%2C%20quiero%20hablar%20sobre%20una%20landing%20page%20o%20web%20para%20mi%20negocio."
     aria-label="Contactar por WhatsApp"
   >
     W
@@ -1610,7 +1714,7 @@
   <footer class="footer">
     <div class="container footer-inner">
       <div>
-        © 2026 Lima Systems Lab · Para negocios de servicios en Lima que quieren mejores leads, operaciones más limpias y sistemas simples que sí se usen.
+        © 2026 Lima Systems Lab · Landing pages, páginas web, sistemas de leads y automatización simple para negocios de servicios en Lima.
       </div>
 
       <div>
