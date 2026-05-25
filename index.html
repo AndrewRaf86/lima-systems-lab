@@ -8,12 +8,12 @@
 
   <meta
     name="description"
-    content="Lima Systems Lab ayuda a negocios de servicios en Lima a convertir más visitas en clientes con landing pages, páginas web, WhatsApp, sistemas de leads y automatización simple."
+    content="Lima Systems Lab ayuda a negocios de servicios en Lima y empresas en inglés a convertir más visitas en clientes con landing pages, páginas web, WhatsApp, sistemas de leads y automatización simple."
   />
 
   <meta
     name="keywords"
-    content="landing page Lima, páginas web Lima, diseño web Lima, web para negocios Lima, WhatsApp negocios Lima, automatización Lima, sistemas para negocios Lima, páginas web para clínicas Lima, landing page Perú, automatización para empresas Perú"
+    content="landing page Lima, páginas web Lima, diseño web Lima, web para negocios Lima, WhatsApp negocios Lima, automatización Lima, sistemas para negocios Lima, landing page Perú, automatización para empresas Perú, landing pages for service businesses, web design for service businesses, lead systems, workflow automation"
   />
 
   <meta name="author" content="Andrew Rafaniello" />
@@ -21,7 +21,7 @@
   <meta property="og:title" content="Lima Systems Lab | Landing Pages y Sistemas para Negocios en Lima" />
   <meta
     property="og:description"
-    content="Creo landing pages, páginas web y sistemas simples para ayudar a negocios de servicios en Lima a convertir más visitas en consultas, citas y clientes."
+    content="Creo landing pages, páginas web y sistemas simples para ayudar a negocios de servicios a convertir más visitas en consultas, citas y clientes."
   />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://limasystems.digital/" />
@@ -696,6 +696,63 @@
       min-height: 50px;
     }
 
+    .english-panel {
+      margin-top: 42px;
+      border: 1px solid rgba(255,255,255,0.1);
+      background:
+        radial-gradient(circle at top right, rgba(216,189,122,0.18), transparent 38%),
+        rgba(255,255,255,0.055);
+      border-radius: 32px;
+      padding: 34px;
+    }
+
+    .english-panel h3 {
+      color: var(--white);
+      font-size: 2.4rem;
+      margin-bottom: 14px;
+    }
+
+    .english-panel p {
+      color: rgba(255,255,255,0.72);
+      margin: 0;
+      max-width: 840px;
+    }
+
+    .english-pricing {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 18px;
+      margin-top: 30px;
+    }
+
+    .english-price-card {
+      background: rgba(255,255,255,0.065);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 24px;
+      padding: 24px;
+    }
+
+    .english-price-card strong {
+      color: var(--white);
+      display: block;
+      font-size: 1.05rem;
+      margin-bottom: 8px;
+    }
+
+    .english-price-card span {
+      display: block;
+      font-family: "Newsreader", Georgia, serif;
+      font-size: 2.3rem;
+      letter-spacing: -0.05em;
+      margin-bottom: 8px;
+    }
+
+    .english-price-card p {
+      color: rgba(255,255,255,0.66);
+      font-size: 0.94rem;
+      margin: 0;
+    }
+
     .case-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -862,7 +919,8 @@
       .process,
       .proof-strip,
       .pricing-logic,
-      .choice-grid {
+      .choice-grid,
+      .english-pricing {
         grid-template-columns: repeat(2, 1fr);
       }
 
@@ -897,7 +955,8 @@
       .process,
       .proof-strip,
       .pricing-logic,
-      .choice-grid {
+      .choice-grid,
+      .english-pricing {
         grid-template-columns: 1fr;
       }
 
@@ -921,6 +980,10 @@
       section {
         padding: 66px 0;
       }
+
+      .english-panel {
+        padding: 26px;
+      }
     }
   </style>
 
@@ -936,16 +999,22 @@
       "name": "Andrew Rafaniello",
       "url": "https://www.linkedin.com/in/andrewrafaniello/"
     },
-    "areaServed": {
-      "@type": "City",
-      "name": "Lima"
-    },
+    "areaServed": [
+      {
+        "@type": "City",
+        "name": "Lima"
+      },
+      {
+        "@type": "Country",
+        "name": "United States"
+      }
+    ],
     "address": {
       "@type": "PostalAddress",
       "addressLocality": "Lima",
       "addressCountry": "PE"
     },
-    "description": "Landing pages, páginas web, sistemas de leads, automatización, WhatsApp, seguimiento, citas y operaciones para negocios de servicios en Lima.",
+    "description": "Landing pages, páginas web, sistemas de leads, automatización, WhatsApp, seguimiento, citas y operaciones para negocios de servicios en Lima y empresas en inglés.",
     "sameAs": [
       "https://www.linkedin.com/in/andrewrafaniello/"
     ],
@@ -973,6 +1042,18 @@
         "name": "Custom Systems / Automation",
         "price": "2000",
         "priceCurrency": "USD"
+      },
+      {
+        "@type": "Offer",
+        "name": "English Landing Page Build",
+        "price": "1500",
+        "priceCurrency": "USD"
+      },
+      {
+        "@type": "Offer",
+        "name": "English Web + Lead System",
+        "price": "3000",
+        "priceCurrency": "USD"
       }
     ]
   }
@@ -995,7 +1076,7 @@
         <a href="#para-quien">Para quién</a>
         <a href="#problemas">Problemas</a>
         <a href="#precios">Precios</a>
-        <a href="#elegir-servicio">Cuál elegir</a>
+        <a href="#english">English / USA</a>
         <a href="#confianza">Confianza</a>
         <a class="nav-cta" href="https://wa.me/13475206792?text=Hola%20Andrew%2C%20quiero%20hablar%20sobre%20una%20landing%20page%20o%20web%20para%20mi%20negocio.">WhatsApp</a>
       </nav>
@@ -1032,6 +1113,13 @@
 
             <a
               class="btn btn-secondary"
+              href="#english"
+            >
+              English services
+            </a>
+
+            <a
+              class="btn btn-secondary"
               href="mailto:rafanielloandrew@gmail.com?subject=Consulta%20Lima%20Systems%20Lab"
             >
               Enviar correo
@@ -1042,11 +1130,11 @@
             <span class="pill">Landing pages desde $500</span>
             <span class="pill">Web + leads desde $1,200</span>
             <span class="pill">Basado en Lima</span>
-            <span class="pill">Automatización cuando tiene sentido</span>
+            <span class="pill">U.S. veteran · English available</span>
           </div>
 
           <p class="lang-note">
-            Si hace falta, también atiendo en inglés. La web empieza en español porque mi foco principal son los negocios de servicios en Lima.
+            Atiendo negocios en español e inglés. La web empieza en español porque mi foco principal son los negocios de servicios en Lima, pero también trabajo de forma remota con empresas de EE. UU. y clientes que prefieren comunicación en inglés.
           </p>
         </div>
 
@@ -1519,6 +1607,66 @@
       </div>
     </section>
 
+    <section id="english" class="section-dark">
+      <div class="container">
+        <div class="section-title">
+          <h2>English-speaking and U.S. businesses</h2>
+          <p>
+            I also work remotely with U.S. and English-speaking service businesses that need landing pages, lead systems, and simple workflow automation.
+          </p>
+        </div>
+
+        <div class="english-panel">
+          <h3>Lean execution without a bloated agency process.</h3>
+          <p>
+            If your business is losing inquiries through a weak website, slow follow-up, messy intake, or scattered tools, I can help you build a cleaner path from visitor to lead, lead to follow-up, and follow-up to booked client. You get direct founder communication, U.S. business standards, and practical systems built from a lean Lima-based operation.
+          </p>
+
+          <div class="english-pricing">
+            <div class="english-price-card">
+              <strong>Landing Page Build</strong>
+              <span>$1,500+</span>
+              <p>One focused page built to explain your offer and convert visitors into calls, forms, or booked appointments.</p>
+            </div>
+
+            <div class="english-price-card">
+              <strong>Web + Lead System</strong>
+              <span>$3,000+</span>
+              <p>Landing page or small website with forms, lead tracking, follow-up flow, basic analytics, and clear CTAs.</p>
+            </div>
+
+            <div class="english-price-card">
+              <strong>Systems Audit</strong>
+              <span>$750+</span>
+              <p>A practical review of your website, lead flow, follow-up, tool stack, and admin bottlenecks.</p>
+            </div>
+
+            <div class="english-price-card">
+              <strong>Workflow Automation</strong>
+              <span>$5,000+</span>
+              <p>Custom workflow systems for intake, follow-up, reporting, CRM tracking, alerts, and repetitive admin work.</p>
+            </div>
+          </div>
+
+          <div class="hero-actions">
+            <a
+              class="btn btn-secondary"
+              href="mailto:rafanielloandrew@gmail.com?subject=English%20services%20for%20my%20business"
+            >
+              Email me in English
+            </a>
+
+            <a
+              class="btn btn-primary"
+              href="https://wa.me/13475206792?text=Hi%20Andrew%2C%20I%20am%20interested%20in%20English%20services%20for%20my%20business."
+            >
+              Message on WhatsApp
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section id="pruebas">
       <div class="container">
         <div class="section-title">
@@ -1609,6 +1757,11 @@
               <li>
                 <span class="check">✓</span>
                 <span><strong>Web primero, automatización después</strong><br />Si la página no convierte, primero arreglamos la captación. Después automatizamos si conviene.</span>
+              </li>
+
+              <li>
+                <span class="check">✓</span>
+                <span><strong>Trabajo en español e inglés</strong><br />Puedo ayudar a negocios locales en Lima y también a empresas de EE. UU. o clientes que prefieren comunicación en inglés.</span>
               </li>
 
               <li>
@@ -1714,7 +1867,7 @@
   <footer class="footer">
     <div class="container footer-inner">
       <div>
-        © 2026 Lima Systems Lab · Landing pages, páginas web, sistemas de leads y automatización simple para negocios de servicios en Lima.
+        © 2026 Lima Systems Lab · Landing pages, páginas web, sistemas de leads y automatización simple para negocios de servicios en Lima y empresas en inglés.
       </div>
 
       <div>
