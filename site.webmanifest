@@ -1,0 +1,16 @@
+{
+  "name": "Mission Stack",
+  "short_name": "Mission Stack",
+  "description": "Connected customer systems for established home-service businesses.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#1154a1",
+  "theme_color": "#1154a1",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

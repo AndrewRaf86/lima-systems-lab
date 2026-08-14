@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Mission Stack">
+  <rect width="64" height="64" fill="#1154a1"/>
+  <path d="M12 12h40v40H12z" fill="none" stroke="#f2d44b" stroke-width="2"/>
+  <path d="M21 22l11 6 11-6M21 31l11 6 11-6M21 40l11 6 11-6" fill="none" stroke="#f8f2df" stroke-width="4" stroke-linecap="square" stroke-linejoin="miter"/>
+</svg>
