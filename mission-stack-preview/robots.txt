@@ -1,0 +1,20 @@
+# DRAFT — not active. Prepared for missionstack.us; do not deploy until approved.
+User-agent: *
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+Sitemap: https://missionstack.us/sitemap.xml

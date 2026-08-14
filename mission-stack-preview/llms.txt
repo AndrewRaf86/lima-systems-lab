@@ -1,0 +1,13 @@
+# DRAFT — not active. Prepared for missionstack.us; do not deploy until approved.
+
+# Mission Stack
+
+> Mission Stack helps U.S. service businesses turn more website inquiries into booked customers by improving their website, lead capture, intake, and follow-up systems. Founder-led, remote, direct communication with every client.
+
+Mission Stack is not a general-purpose AI agency. Automation and AI are tools used to fix specific conversion, intake, and follow-up problems for service businesses — the core offer is the Systems Review and the fixes that follow it.
+
+## Primary offer
+- Systems Review: a paid audit covering website, lead capture, intake, and follow-up, delivered as annotated screenshots, a customer-journey map, and a prioritized 30-day action plan.
+
+## Contact
+- hello@missionstack.us
