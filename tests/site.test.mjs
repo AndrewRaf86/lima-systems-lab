@@ -24,10 +24,14 @@ test("contact is honest and email-based", () => {
   assert.ok((home.match(/mailto:rafanielloandrew@gmail\.com/g) ?? []).length >= 3);
 });
 
-test("private launch controls are present", async () => {
-  assert.match(home, /noindex, nofollow, noarchive, nosnippet/);
+test("production indexing controls are present", async () => {
+  assert.match(home, /index, follow, max-image-preview:large/);
+  assert.doesNotMatch(home, /noindex/);
   const robots = await readFile(resolve(root, "robots.txt"), "utf8");
-  assert.match(robots, /Disallow: \//);
+  assert.match(robots, /Allow: \//);
+  assert.doesNotMatch(robots, /Disallow: \//);
+  const sitemap = await readFile(resolve(root, "sitemap.xml"), "utf8");
+  assert.match(sitemap, /<loc>https:\/\/missionstack\.us\/<\/loc>/);
 });
 
 test("social and favicon assets are wired", () => {

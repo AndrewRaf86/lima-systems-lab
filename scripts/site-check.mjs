@@ -35,7 +35,12 @@ async function lint() {
     assert(/<html\b[^>]*lang=/i.test(html), `${file}: missing document language`);
     assert(/<meta\b[^>]*name="viewport"/i.test(html), `${file}: missing viewport metadata`);
     assert(/<title>[^<]+<\/title>/i.test(html), `${file}: missing title`);
-    assert(/<meta\b[^>]*name="robots"[^>]*noindex/i.test(html), `${file}: site must remain noindex`);
+    if (file === "index.html") {
+      assert(/<meta\b[^>]*name="robots"[^>]*index, follow/i.test(html), `${file}: homepage must allow indexing`);
+      assert(!/<meta\b[^>]*name="robots"[^>]*noindex/i.test(html), `${file}: homepage still contains noindex`);
+    } else {
+      assert(/<meta\b[^>]*name="robots"[^>]*noindex/i.test(html), `${file}: legacy redirect must remain noindex`);
+    }
     for (const pattern of forbidden) assert(!pattern.test(html), `${file}: forbidden text ${pattern}`);
   }
 
@@ -60,10 +65,11 @@ async function checkRoutes() {
     console.log(`PASS ${route} -> ${file}`);
   }
   const robots = await read("robots.txt");
-  assert(/User-agent:\s*\*/i.test(robots) && /Disallow:\s*\//i.test(robots), "robots.txt does not block indexing");
+  assert(/User-agent:\s*\*/i.test(robots) && /Allow:\s*\//i.test(robots), "robots.txt does not allow homepage crawling");
+  assert(!/Disallow:\s*\//i.test(robots), "robots.txt still blocks the production site");
   const sitemap = await read("sitemap.xml");
-  assert(!/<loc>/i.test(sitemap), "private sitemap must not publish URLs");
-  console.log("Route checks passed: legacy routes resolve and indexing remains blocked.");
+  assert(/<loc>https:\/\/missionstack\.us\/<\/loc>/i.test(sitemap), "production homepage missing from sitemap");
+  console.log("Route checks passed: legacy routes resolve and production indexing is enabled.");
 }
 
 const command = process.argv[2];

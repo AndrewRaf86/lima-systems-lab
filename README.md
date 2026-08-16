@@ -1,8 +1,8 @@
 # Mission Stack
 
-Private, pre-launch website for Mission Stack: customer systems for established home-service businesses.
+Production website for Mission Stack: customer systems for established home-service businesses.
 
-The site is intentionally static and dependency-free. Its public pages include explicit `noindex` metadata, and `robots.txt` blocks crawling until launch approval.
+The site is intentionally static and dependency-free. The homepage is configured for indexing at `missionstack.us`; retired legacy routes remain `noindex` redirects.
 
 ## Local checks
 
