@@ -17,11 +17,13 @@ test("homepage contains eight connected services and four process steps", () => 
   assert.equal((home.match(/<li><span>0[1-4]<\/span><h3>/g) ?? []).length, 4);
 });
 
-test("contact is honest and email-based", () => {
+test("contact is honest and uses verified phone and email methods", () => {
   assert.doesNotMatch(home, /<form\b/i);
-  assert.match(home, /Email is the active contact method\./);
+  assert.match(home, /Phone and email are active contact methods\./);
   assert.match(home, /No web form or scheduling system is connected\./);
   assert.ok((home.match(/mailto:rafanielloandrew@gmail\.com/g) ?? []).length >= 3);
+  assert.ok((home.match(/tel:\+13475206792/g) ?? []).length >= 5);
+  assert.match(home, /"telephone": "\+1-347-520-6792"/);
 });
 
 test("production indexing controls are present", async () => {

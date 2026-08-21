@@ -51,6 +51,7 @@ async function lint() {
   }
   assert(!/<form\b/i.test(home), "index.html: form found without a verified delivery integration");
   assert(/mailto:rafanielloandrew@gmail\.com/i.test(home), "index.html: active email CTA missing");
+  assert(/tel:\+13475206792/i.test(home), "index.html: active phone CTA missing");
   assert(/Illustrative demonstration \/ Not a case study/i.test(home), "index.html: demonstration label missing");
   assert(/prefers-reduced-motion/i.test(home), "index.html: reduced-motion support missing");
   assert(/<script type="application\/ld\+json">/i.test(home), "index.html: structured data missing");

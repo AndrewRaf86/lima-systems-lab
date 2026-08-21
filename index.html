@@ -24,11 +24,11 @@
   <link rel="manifest" href="/site.webmanifest">
   <style>
     :root {
-      --blue: #1154a1;
-      --blue-dark: #0d4382;
-      --navy: #102f56;
-      --paper: #f8f2df;
-      --pale: #c5d8ed;
+      --blue: #0f4f95;
+      --blue-dark: #0b417c;
+      --navy: #0d2c50;
+      --paper: #fbf7e9;
+      --pale: #d4e2f1;
       --yellow: #f2d44b;
       --yellow-soft: #f7e780;
       --line-blue: rgba(248, 242, 223, .28);
@@ -46,6 +46,7 @@
       background: var(--blue);
       color: var(--paper);
       font-family: var(--sans);
+      line-height: 1.5;
       -webkit-font-smoothing: antialiased;
     }
     a { color: inherit; text-decoration: none; }
@@ -73,8 +74,8 @@
     .blueprint {
       background-color: var(--blue);
       background-image:
-        linear-gradient(rgba(255,255,255,.08) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(255,255,255,.08) 1px, transparent 1px);
+        linear-gradient(rgba(255,255,255,.055) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,.055) 1px, transparent 1px);
       background-size: 36px 36px;
     }
     .eyebrow {
@@ -101,13 +102,17 @@
       transition: transform .2s ease, background-color .2s ease;
     }
     .button:hover { transform: translateY(-2px); background: var(--yellow-soft); }
+    .button-secondary { background: transparent; color: var(--paper); }
+    .button-secondary:hover { background: rgba(248, 242, 223, .1); }
+    .yellow .button-secondary { border-color: var(--navy); color: var(--navy); }
+    .yellow .button-secondary:hover { background: rgba(16, 47, 86, .08); }
     .button-small { min-height: 42px; padding: 10px 16px; font-size: 12px; }
     .site-header {
       min-height: 84px;
       display: grid;
       grid-template-columns: 1fr auto auto;
       align-items: center;
-      gap: 34px;
+      gap: 28px;
       border-top: 1px solid var(--line-blue);
       border-bottom: 1px dashed var(--paper);
     }
@@ -134,7 +139,7 @@
       letter-spacing: .08em;
       text-transform: uppercase;
     }
-    nav { display: flex; gap: 22px; font-size: 12px; }
+    nav { display: flex; gap: 20px; font-size: 12px; }
     nav a { padding-block: 12px; }
     nav a:hover { color: var(--yellow); }
 
@@ -153,8 +158,8 @@
       max-width: 720px;
       margin: 0;
       font-size: clamp(58px, 7vw, 96px);
-      line-height: .88;
-      letter-spacing: -.07em;
+      line-height: .92;
+      letter-spacing: -.06em;
     }
     .lede {
       max-width: 690px;
@@ -163,7 +168,8 @@
       font-size: 19px;
       line-height: 1.55;
     }
-    .hero-actions { display: flex; gap: 25px; align-items: center; margin-top: 34px; }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; margin-top: 34px; }
+    .hero-proof-link { margin-top: 18px; }
     .text-link { padding: 10px 0 6px; border-bottom: 1px solid; font-size: 14px; font-weight: 800; }
     .text-link:hover { color: var(--yellow); }
     .trust-line {
@@ -185,6 +191,7 @@
       border: 1px dashed var(--paper);
       outline: 1px solid var(--line-blue);
       outline-offset: 10px;
+      background: rgba(7, 37, 72, .16);
     }
     .visual-label { margin: 0 0 24px; font-family: var(--mono); font-size: 10px; letter-spacing: .12em; }
     .path-stack { display: grid; }
@@ -208,7 +215,7 @@
     .strip-inner p { margin: 0; padding: 22px; border-left: 1px solid rgba(16,47,86,.22); font-size: 12px; font-weight: 700; }
     .strip-inner p:last-child { border-right: 1px solid rgba(16,47,86,.22); }
 
-    .section { padding-block: 115px; }
+    .section { padding-block: 108px; }
     .section-intro { max-width: 780px; }
     .section-intro h2 {
       margin: 0 0 28px;
@@ -237,7 +244,7 @@
     .service-card { min-height: 245px; padding: 24px; border-right: 1px solid var(--line-paper); border-bottom: 1px solid var(--line-paper); }
     .service-card > span { color: var(--blue); }
     .service-card h3 { margin: 42px 0 12px; font-size: 20px; letter-spacing: -.025em; }
-    .service-card p { margin: 0; font-size: 13px; line-height: 1.55; }
+    .service-card p { margin: 0; font-size: 14px; line-height: 1.65; }
 
     .process-list { list-style: none; margin: 65px 0 0; padding: 0; border-top: 1px solid var(--line-blue); }
     .process-list li { display: grid; grid-template-columns: 80px 1fr 1.3fr; gap: 30px; align-items: baseline; padding: 30px 0; border-bottom: 1px solid var(--line-blue); }
@@ -255,7 +262,7 @@
     .audit-board tr + tr { border-top: 1px solid rgba(248,242,223,.18); }
     .audit-board thead { color: var(--pale); font-family: var(--mono); font-size: 9px; text-transform: uppercase; letter-spacing: .08em; }
     .audit-board tbody th { font-size: 14px; }
-    .audit-board tbody td { font-size: 13px; }
+    .audit-board tbody td { font-size: 14px; line-height: 1.55; }
     .priority { display: inline-block; padding: 5px 8px; border: 1px solid var(--yellow); color: var(--yellow); font-family: var(--mono); font-size: 9px; text-transform: uppercase; }
     .annotation { max-width: 400px; margin-top: 18px; color: var(--pale); font-size: 12px; }
     .annotation span { display: inline-grid; width: 24px; height: 24px; place-items: center; margin-right: 8px; border: 1px solid var(--yellow); color: var(--yellow); font-family: var(--mono); }
@@ -277,14 +284,17 @@
     .contact-layout h2 { margin: 0; font-size: clamp(54px, 8vw, 100px); line-height: .88; letter-spacing: -.065em; }
     .contact-layout > p:not(.eyebrow) { max-width: 690px; font-size: 19px; line-height: 1.6; }
     .contact-note { display: grid; grid-template-columns: .9fr 1.4fr; gap: 30px; margin: 34px 0; padding: 22px 0; border-block: 1px solid rgba(16,47,86,.35); font-size: 13px; line-height: 1.5; }
-    .contact-section .button { background: var(--navy); color: var(--paper); }
-    .contact-section .button:hover { background: #071f39; }
+    .contact-actions { display: flex; flex-wrap: wrap; gap: 12px; }
+    .contact-section .button:not(.button-secondary) { background: var(--navy); color: var(--paper); }
+    .contact-section .button:not(.button-secondary):hover { background: #071f39; }
     .contact-detail { margin-top: 18px; font-family: var(--mono); font-size: 11px; }
     .contact-detail a { border-bottom: 1px solid; }
+    .contact-detail span { margin-inline: 8px; opacity: .55; }
 
-    .footer { display: grid; grid-template-columns: 1fr auto auto; gap: 30px; min-height: 110px; align-items: center; font-size: 11px; }
+    .footer { display: grid; grid-template-columns: 1fr auto auto auto; gap: 26px; min-height: 110px; align-items: center; font-size: 11px; }
     .footer p { color: var(--pale); }
-    .footer > a:last-child { border-bottom: 1px solid var(--line-blue); }
+    .footer > a:not(.mark) { border-bottom: 1px solid var(--line-blue); }
+    .mobile-contact-bar { display: none; }
 
     @media (prefers-reduced-motion: reduce) {
       html { scroll-behavior: auto; }
@@ -309,6 +319,7 @@
       h1 { font-size: clamp(48px, 15vw, 58px); }
       .hero-actions { align-items: stretch; flex-direction: column; }
       .hero-actions .button { width: 100%; padding-inline: 12px; text-align: center; white-space: normal; }
+      .hero-proof-link { margin-top: 20px; }
       .text-link { align-self: flex-start; }
       .hero-visual { padding: 20px; outline-offset: 5px; }
       .review-grid { grid-template-columns: 1fr; }
@@ -320,7 +331,27 @@
       .about-grid { gap: 30px; }
       .section { padding-block: 80px; }
       .contact-note { grid-template-columns: 1fr; gap: 8px; }
-      .footer { grid-template-columns: 1fr; gap: 15px; padding-block: 30px; }
+      .contact-actions { flex-direction: column; }
+      .contact-actions .button { width: 100%; }
+      .contact-detail { display: grid; gap: 8px; font-size: 10px; }
+      .contact-detail span { display: none; }
+      .footer { grid-template-columns: 1fr; gap: 15px; padding: 30px 0 98px; }
+      .mobile-contact-bar {
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 90;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 8px;
+        padding: 10px 14px calc(10px + env(safe-area-inset-bottom));
+        border-top: 1px solid rgba(248, 242, 223, .3);
+        background: rgba(13, 44, 80, .97);
+        box-shadow: 0 -12px 30px rgba(5, 24, 48, .22);
+      }
+      .mobile-contact-bar .button { min-height: 46px; padding: 10px; font-size: 12px; }
+      .mobile-contact-bar .button-secondary { background: var(--paper); color: var(--navy); }
     }
   </style>
   <script type="application/ld+json">
@@ -330,6 +361,7 @@
     "name": "Mission Stack",
     "url": "https://missionstack.us/",
     "email": "rafanielloandrew@gmail.com",
+    "telephone": "+1-347-520-6792",
     "description": "Website, lead-flow, intake, follow-up, search visibility, and workflow improvement for established home-service businesses.",
     "areaServed": { "@type": "Country", "name": "United States" },
     "knowsAbout": ["Website conversion", "Lead capture", "Customer intake", "CRM workflows", "Local search visibility"]
@@ -350,7 +382,7 @@
       <a href="#proof">Review example</a>
       <a href="#faq">FAQ</a>
     </nav>
-    <a class="button button-small" href="mailto:rafanielloandrew@gmail.com?subject=Mission%20Stack%20Systems%20Review%20request">Request a Systems Review</a>
+    <a class="button button-small" href="tel:+13475206792" aria-label="Call Mission Stack at 347 520 6792">Call (347) 520-6792</a>
   </header>
 
   <main id="main-content">
@@ -361,8 +393,9 @@
         <p class="lede">Mission Stack improves the websites, lead capture, intake, and follow-up systems that established home-service businesses rely on to turn local attention into real customer conversations.</p>
         <div class="hero-actions">
           <a class="button" href="mailto:rafanielloandrew@gmail.com?subject=Mission%20Stack%20Systems%20Review%20request">Request a Systems Review <span aria-hidden="true">→</span></a>
-          <a class="text-link" href="#proof">See what gets fixed <span aria-hidden="true">↘</span></a>
+          <a class="button button-secondary" href="tel:+13475206792" aria-label="Call Mission Stack at 347 520 6792">Call (347) 520-6792</a>
         </div>
+        <div class="hero-proof-link"><a class="text-link" href="#proof">See what gets fixed <span aria-hidden="true">↘</span></a></div>
         <p class="trust-line">Practical systems. Clear priorities. No invented promises.</p>
       </div>
 
@@ -481,7 +514,7 @@
           <details><summary>Do you replace our current tools?</summary><p>Only when there is a clear reason. The first goal is to understand the process and make the smallest useful improvement.</p></details>
           <details><summary>Is automation always part of the work?</summary><p>No. Automation is useful when it removes a repetitive step from a process that already has clear ownership and review.</p></details>
           <details><summary>What can we receive?</summary><p>Depending on the agreed scope: annotated screenshots, a journey map, a prioritized issue list, and a practical action plan.</p></details>
-          <details><summary>How do we start?</summary><p>Email Mission Stack with a short description of your business and the customer-path problem you want reviewed. No scheduling system or web form is connected yet.</p></details>
+          <details><summary>How do we start?</summary><p>Call or email Mission Stack with a short description of your business and the customer-path problem you want reviewed. No scheduling system or web form is connected yet.</p></details>
         </div>
       </div>
     </section>
@@ -490,13 +523,16 @@
       <div class="shell contact-layout">
         <p class="eyebrow">Next step</p>
         <h2 id="contact-title">Find the gaps before buying another tool.</h2>
-        <p>Email Mission Stack to request a Systems Review. Describe the path from first discovery to booking, and where you think customers are getting stuck.</p>
+        <p>Call or email Mission Stack to request a Systems Review. Describe the path from first discovery to booking, and where you think customers are getting stuck.</p>
         <div class="contact-note" aria-label="Contact delivery details">
-          <strong>Email is the active contact method.</strong>
-          <span>No web form or scheduling system is connected. The button below opens your email app with a Systems Review subject line.</span>
+          <strong>Phone and email are active contact methods.</strong>
+          <span>No web form or scheduling system is connected. Use the options below to call directly or open your email app.</span>
         </div>
-        <a class="button" href="mailto:rafanielloandrew@gmail.com?subject=Mission%20Stack%20Systems%20Review%20request">Email Mission Stack <span aria-hidden="true">→</span></a>
-        <p class="contact-detail">rafanielloandrew@gmail.com</p>
+        <div class="contact-actions">
+          <a class="button" href="tel:+13475206792" aria-label="Call Mission Stack at 347 520 6792">Call (347) 520-6792 <span aria-hidden="true">→</span></a>
+          <a class="button button-secondary" href="mailto:rafanielloandrew@gmail.com?subject=Mission%20Stack%20Systems%20Review%20request">Email Mission Stack</a>
+        </div>
+        <p class="contact-detail"><a href="tel:+13475206792">(347) 520-6792</a><span aria-hidden="true">/</span><a href="mailto:rafanielloandrew@gmail.com">rafanielloandrew@gmail.com</a></p>
       </div>
     </section>
   </main>
@@ -507,7 +543,13 @@
       <span><strong>MISSION STACK</strong><small>Customer systems</small></span>
     </a>
     <p>Website, lead-flow, and workflow improvement for established home-service businesses.</p>
+    <a href="tel:+13475206792" aria-label="Call Mission Stack at 347 520 6792">(347) 520-6792</a>
     <a href="#main-content">Back to top ↑</a>
   </footer>
+
+  <aside class="mobile-contact-bar" aria-label="Quick contact options">
+    <a class="button" href="tel:+13475206792" aria-label="Call Mission Stack at 347 520 6792">Call now</a>
+    <a class="button button-secondary" href="mailto:rafanielloandrew@gmail.com?subject=Mission%20Stack%20Systems%20Review%20request">Email</a>
+  </aside>
 </body>
 </html>
