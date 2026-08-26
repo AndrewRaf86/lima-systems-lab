@@ -8,5 +8,6 @@
     "build": "node scripts/build-site.mjs",
     "test": "node --test tests/site.test.mjs",
     "check:routes": "node scripts/site-check.mjs routes"
+    ,"check:esteros": "node scripts/esteros-check.mjs"
   }
 }

@@ -13,6 +13,8 @@ const entries = [
   "en",
   "auditoria",
   "insights",
+  "esteros",
+  "assets",
 ];
 
 await rm(out, { recursive: true, force: true });
