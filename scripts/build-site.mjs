@@ -15,6 +15,7 @@ const entries = [
   "insights",
   "esteros",
   "assets",
+  "concepts",
 ];
 
 await rm(out, { recursive: true, force: true });
